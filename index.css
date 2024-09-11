@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,650;1,600&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+
+/* navbar */
+.navbar-brand img {
+    margin-left: 70px; /* Increased left margin */
+  }
+  .nav-link {
+    color: #1e2d4b !important; /* Deep blue color */
+    font-size: 1.25rem; /* Slightly larger size */
+  }
+  .dropdown-menu {
+    background-color: yellow;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+    margin-top: 0; /* Fixes small gap issue on hover */
+  }
+
+  .hiring-btn {
+    border: 2px solid #2a3855;
+    border-radius: 45px;
+    font-size: small;
+    color: #2a3855;
+    margin-left:40px; 
+  }
+  .hiring-btn:hover {
+    background-color: #152542;
+    color: white;
+  }
+
+  @media (max-width: 600px) {
+    .navbar-brand img {
+        margin-left: 10px
+    }
+
+     .hiring-btn{
+        width: 100%;
+        margin-left:0px;
+     }
+  } 
+/* navbar */
+
+
+
+
+
+
+
+/* Styling for large screens */
+.carousel-caption {
+    position: absolute;
+    top: 70%; /* Vertically center the caption */
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: left; /* Left-align text */
+    color: rgb(5, 5, 5);
+    opacity: 0; /* Initially hidden */
+    transition: all 0.5s ease-in-out; /* Smooth pop-up animation */
+  }
+  
+  .carousel-caption h5 {
+    font-size: 2rem; /* Large size for the caption */
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption p {
+    font-size: 1.2rem; /* Adjust the description size */
+  }
+  
+  .carousel-caption .btn-warning {
+    padding: 5px;
+    background-color: yellow;
+    color: black;
+    border: none;
+  }
+  
+  .carousel-caption.visible {
+    opacity: 1; /* Fully visible */
+    top: 50%; /* Pop-up effect */
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-caption {
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center; /* Center text on smaller screens */
+      width: 100%;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 1.5rem; /* Smaller size for caption on small screens */
+    }
+  
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+.footer-box {
+    background-color: #152542;; /* Deep blue color */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+
+  @media (max-width: 600px) {
+    .footer-box{
+        
+     
+        display: flex;
+        flex-wrap: wrap;
+         text-align: center; 
+        justify-content: center;
+        text-align: center; 
+
+    }
+  }
+
+  
+  .footer-box .caption {
+    font-size: 1.2rem;
+  }
+  
+  .footer-box .number {
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 23px;
+    background-color: white;
+    color: black;
+  }
+  
+  .link-box {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .link-box .footer-column {
+    padding: 20px;
+  }
+  
+  .link-box .footer-column h5 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 15px;
+  }
+  
+  .link-box .footer-column a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .link-box .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Social Media Links */
+  .social-links{
+    display: flex;
+    justify-content: center;
+  
+  }
+  .social-links a {
+    margin-right: 15px;
+    font-size: 36px;
+    margin-left: 11px;
+  }
+  
+  .social-links img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Certificate Verification */
+  .certificate-verification a {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .certificate-verification img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .certificate-verification a:hover {
+    text-decoration: underline;
+  }
+  
+  .copyright-box {
+    background-color: #152542;;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    margin: 0;
+  }
+  /* footer */
