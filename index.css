@@ -3,7 +3,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 650;
     font-style: normal;
   }
 
@@ -13,46 +13,7 @@ body {
   }
 
 
-/* navbar */
-.navbar-brand img {
-    margin-left: 70px; /* Increased left margin */
-  }
-  .nav-link {
-    color: #1e2d4b !important; /* Deep blue color */
-    font-size: 1.25rem; /* Slightly larger size */
-  }
-  .dropdown-menu {
-    background-color: yellow;
-  }
 
-  .dropdown:hover .dropdown-menu {
-    display: block; /* Show dropdown on hover */
-    margin-top: 0; /* Fixes small gap issue on hover */
-  }
-
-  .hiring-btn {
-    border: 2px solid #2a3855;
-    border-radius: 45px;
-    font-size: small;
-    color: #2a3855;
-    margin-left:40px; 
-  }
-  .hiring-btn:hover {
-    background-color: #152542;
-    color: white;
-  }
-
-  @media (max-width: 600px) {
-    .navbar-brand img {
-        margin-left: 10px
-    }
-
-     .hiring-btn{
-        width: 100%;
-        margin-left:0px;
-     }
-  } 
-/* navbar */
 
 
 
@@ -72,8 +33,9 @@ body {
     transition: all 0.5s ease-in-out; /* Smooth pop-up animation */
   }
   
-  .carousel-caption h5 {
-    font-size: 2rem; /* Large size for the caption */
+  .carousel-caption h1 {
+    font-size: 2.5rem; /* Large size for the caption */
+    font-weight: 1000;
     margin-bottom: 10px;
   }
   
@@ -83,9 +45,9 @@ body {
   
   .carousel-caption .btn-warning {
     padding: 5px;
-    background-color: yellow;
+    background-color: rgba(255, 230, 0, 0.897);
     color: black;
-    border: none;
+    border: 2px solid rgba(255, 230, 0, 0.897);
   }
   
   .carousel-caption.visible {
@@ -115,130 +77,281 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer */
-.footer-box {
-    background-color: #152542;; /* Deep blue color */
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0;
+  /* content section 1 */
+  .custom-section {
+    padding: 50px 0;
   }
+  
+  .custom-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .small-line {
+    width: 50px;
+    height: 1.75px;
+    background-color: #152542 !important;
 
+    margin: 0 auto 30px auto;
+  }
+  
+  .card-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .custom-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparent effect */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    opacity: 0;
+  }
+  
+  .animated-card {
+    transform: translateY(50px);
+  }
+  
+  .custom-card img.card-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 35%;
+    margin-bottom: 16px;
+    padding: 8px;
+  }
+  .custom-card img{
 
-  @media (max-width: 600px) {
-    .footer-box{
-        
-     
-        display: flex;
-        flex-wrap: wrap;
-         text-align: center; 
-        justify-content: center;
-        text-align: center; 
-
+  }
+  
+  .card-description {
+    color: grey;
+    font-size: 1.1rem;
+  }
+  
+  /* Pop-up effect */
+  .custom-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Media Query for small screens */
+  @media (max-width: 768px) {
+    .card-row {
+      display: block;
     }
   }
 
-  
-  .footer-box .caption {
-    font-size: 1.2rem;
-  }
-  
-  .footer-box .number {
-    border: 2px solid white;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 23px;
-    background-color: white;
-    color: black;
-  }
-  
-  .link-box {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    width: 100%;
-    margin: 0;
-  }
-  
-  .link-box .footer-column {
-    padding: 20px;
-  }
-  
-  .link-box .footer-column h5 {
-    font-size: 1.5rem;
-    font-weight: bolder;
-    margin-bottom: 15px;
-  }
-  
-  .link-box .footer-column a {
-    display: block;
+  .custom-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color:#152542;
     color: white;
     text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* content section 1 */
+
+
+/* content section 2 */
+.custom-content-section {
+    padding: 60px 0;
+  }
+  
+  .section-caption {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+/*   
+  .small-line {
+    width: 50px;
+    height: 3px;
+    background-color: #333;
+    margin: 10px auto;
+  } */
+  
+  .content-row {
+    margin-top: 40px;
+  }
+  
+  .content-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .content-caption {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .content-description {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: grey;
+  }
+  
+  .read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#152542;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-button:hover {
+    background-color: darkblue;
+  }
+  
+/* content section 2 */
+
+
+
+/* why roy informatic */
+.feature-detail {
+    margin: 44px;
+    margin-bottom: 30px;
+    text-align: left; /* Ensure content aligns to the left */
+  }
+  
+  .feature-caption {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left; /* Left align caption */
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    color: #6c757d;
+    text-align: left; /* Left align description */
+  }
+/* why roy informatic */
+
+
+
+/* meet our leadership */
+/* General Section Styling */
+.team-section {
+    padding: 50px 0;
+  }
+  
+  .section-caption {
+    font-size: 2rem;
     margin-bottom: 10px;
   }
   
-  .link-box .footer-column a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Social Media Links */
-  .social-links{
-    display: flex;
-    justify-content: center;
-  
-  }
-  .social-links a {
-    margin-right: 15px;
-    font-size: 36px;
-    margin-left: 11px;
-  }
-  
-  .social-links img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  /* Certificate Verification */
-  .certificate-verification a {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .certificate-verification img {
+  .small-line {
     width: 50px;
-    margin-right: 10px;
+    margin: 0 auto 30px;
+    border: 2px solid #000;
   }
   
-  .certificate-verification a:hover {
-    text-decoration: underline;
+  /* Team Member Styling */
+  .team-member {
+    margin-bottom: 30px;
   }
   
-  .copyright-box {
-    background-color: #152542;;
+  .team-image {
+    width: 100%;  /* Ensure the image takes the full column width */
+    height: 250px; /* Set a fixed height to make the image a square */
+    object-fit: cover;
+    border-radius: 10px; /* Optional rounded corners */
+  }
+  
+  .team-name {
+    font-size: 1.3rem;
+    margin-top: 15px;
+  }
+  
+  .team-designation {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  /* Responsive Grid */
+  @media (max-width: 768px) {
+    .team-member {
+      margin-bottom: 20px;
+    }
+  }
+
+
+  /* Button Styling */
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color:#152542; /* Deep blue on hover */
     color: white;
-    text-align: center;
-    padding: 30px;
-    width: 100%;
-    margin: 0;
+    border-color:#152542;
   }
-  /* footer */
+  
+/* meet our leadership */
+
+
+
+
+
+
+/* resources on demand */
+.boxes-section {
+    padding: 50px 0;
+  }
+  
+  .section-caption {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Box Styling */
+  .box {
+    margin-bottom: 30px;
+  }
+  
+  .square-img {
+    width: 100%;
+    height: 250px; /* Ensures the box is square */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .box-caption {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  /* Hover Effect */
+  .box:hover .square-img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  /* Carousel Control Styling */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black; /* Adjust color if needed */
+    opacity: 0.5;
+    border-radius: 50%;
+    padding: 10px;
+  }
+/* resources on demand */
+

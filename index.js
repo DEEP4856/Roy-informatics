@@ -16,3 +16,26 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   
 // crousel description effect
+
+
+
+
+// content section 1
+
+document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('.custom-card');
+  
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.5 });
+  
+    cards.forEach(card => {
+      observer.observe(card);
+    });
+  });
+  
+// content section 1
