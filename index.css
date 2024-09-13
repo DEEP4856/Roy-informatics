@@ -310,48 +310,98 @@ body {
 
 
 
-
-/* resources on demand */
-.boxes-section {
+/* Section Styling */
+.team-section {
     padding: 50px 0;
   }
   
   .section-caption {
     font-size: 2.5rem;
-    margin-bottom: 40px;
   }
   
-  /* Box Styling */
-  .box {
-    margin-bottom: 30px;
+  .section-line {
+    width: 50px;
+    height: 3px;
+    background-color: #ccc;
+    margin: 10px auto;
   }
   
-  .square-img {
-    width: 100%;
-    height: 250px; /* Ensures the box is square */
-    object-fit: cover;
-    border-radius: 8px;
+  /* Slider Styling */
+  .slider-container {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
     transition: transform 0.3s ease;
   }
   
-  .box-caption {
-    font-size: 1.1rem;
-    margin-top: 10px;
-    color: #333;
-  }
-  
-  /* Hover Effect */
-  .box:hover .square-img {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-  }
-  
-  /* Carousel Control Styling */
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    background-color: black; /* Adjust color if needed */
-    opacity: 0.5;
-    border-radius: 50%;
+  .card {
+    flex: 1 0 25%;
+    max-width: 25%;
     padding: 10px;
+    box-sizing: border-box;
   }
-/* resources on demand */
+  
+  .card-img-top {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .card-text {
+    color: grey;
+  }
+  
+  /* Slider Controls */
+  .slider-control-prev, 
+  .slider-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .slider-control-prev {
+    left: 10px;
+  }
+  
+  .slider-control-next {
+    right: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 767px) {
+    .card {
+      flex: 1 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .card {
+      flex: 1 0 50%;
+      max-width: 50%;
+    }
+  }
+  
 
+
+
+  

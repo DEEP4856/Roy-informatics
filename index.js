@@ -39,3 +39,41 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   
 // content section 1
+
+
+
+
+
+// image slider effect
+let currentSlide = 0;
+
+function slideNext() {
+  const slider = document.getElementById('slider');
+  const totalSlides = slider.children.length;
+  const maxSlide = totalSlides - 1;
+
+  if (currentSlide < maxSlide) {
+    currentSlide++;
+  } else {
+    currentSlide = 0; // Loop back to the first slide
+  }
+
+  const transformValue = `translateX(-${currentSlide * 100}%)`;
+  slider.style.transform = transformValue;
+}
+
+function slidePrev() {
+  const slider = document.getElementById('slider');
+  const totalSlides = slider.children.length;
+
+  if (currentSlide > 0) {
+    currentSlide--;
+  } else {
+    currentSlide = totalSlides - 1; // Loop back to the last slide
+  }
+
+  const transformValue = `translateX(-${currentSlide * 100}%)`;
+  slider.style.transform = transformValue;
+}
+
+// image slider effect
