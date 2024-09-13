@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content=" Roy Informatics  Pvt. Ltd">
-    <meta name="description" content="">
+    <meta name="description" content="Roy Informatics is committed to gaining a knowledge of your business and learning about its operations. We are able to guarantee that our marketing plan will be developed with the exclusive goal of providing solutions to the challenges that your company encounters since we create a relationship with each of our customers. ">
 
     <title>Roy Informatics Pvt. Ltd</title>
  
@@ -16,6 +16,64 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="nav-footer.css">
 </head>
+
+<style>
+
+.contact-description{
+    color: #152542;
+    font-weight: 600;
+}
+    
+
+/* form box */
+.contact-section {
+  background-color: rgba(255, 255, 255, 0.8); /* Light overlay on background image */
+}
+
+.form-container {
+  
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-control {
+  /* border-radius: 5px; */
+ 
+}
+
+button.btn-primary {
+  background-color: #ffca00; /* Deep blue */
+  border-radius: 5px;
+  padding: 5px 25px;
+  color: black;
+}
+
+button.btn-primary:hover {
+  background-color:#ffd83a; /* Darker blue on hover */
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+  }
+  
+  .row .col-md-4, .row .col-md-6 {
+    margin-bottom: 15px;
+  }
+}
+
+/* form box */
+
+
+
+
+
+
+</style>
+
+
 <body>
 
 
@@ -35,7 +93,7 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="about.html">Company</a></li>
                 <li><a class="dropdown-item" href="team.html">Our Team</a></li>
-                <li><a class="dropdown-item" href="#">Mission and Vission</a></li>
+                <li><a class="dropdown-item" href="mission&vission.html">Mission and Vission</a></li>
                 <li><a class="dropdown-item" href="#">Portfolio</a></li>
                 <!-- <li><a class="dropdown-item" href="#">Training</a></li> -->
                 <li><a class="dropdown-item" href="#"> Blog</a></li>
@@ -73,8 +131,8 @@
               <li><a class="dropdown-item" href="#">Hire React-Native Developer</a></li>
             </ul>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link  dropdown-toggle" href="#">Industries</a>
+          <li class="nav-item ">
+            <a class="nav-link " href="#">Industries</a>
             <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="#">SEO Packages</a></li>
                 <li><a class="dropdown-item" href="#">SMO Packages</a></li>
@@ -87,7 +145,7 @@
             <a class="nav-link" href="#">Traning</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Partner with Us</a>
+            <a class="nav-link" href="partner.html">Partner with Us</a>
           </li>
         </ul>
         <a href="#" class="btn hiring-btn">We Are Hiring !</a>
@@ -101,10 +159,115 @@
 
 
 
+  <!-- bannersection-->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/header-5.jpg" class="d-block w-100" alt="..." height="470" width="400">
+        <div class="carousel-caption  d-md-block animated-caption">
+          <h1 > Contact</h1>
+          <h3 class="contact-description">Give us a call, send us an email,<br>
+            or fill out the form below.</h3>
+        
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- bannersection-->
 
 
+<!-- request a qote -->
+<section class="contact-section" style="background-image: url('./img/gallery/dark-office.jpg'); background-size: cover; background-position: center; padding: 40px 0;">
+    <div class="container">
+      <div class="form-container p-4">
+        <div style="color: white;">
+        <h1 >REQUEST A QUOTE</h1>
+        <p>Our Team is always ready to help. Give us a call, send us an email, or fill out the form below</p>
+    </div>
+        <form>
+          <!-- Row 1: Name, Company Name, Email Address -->
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="Name" required>
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="Company Name" required>
+            </div>
+            <div class="col-md-4">
+              <input type="email" class="form-control" placeholder="Email Address" required>
+            </div>
+          </div>
+  
+          <!-- Row 2: Phone Number, City, Select Service -->
+          <div class="row mb-3">
+            <div class="col-md-4">
+              <input type="tel" class="form-control" placeholder="Phone Number" required>
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control" placeholder="City" required>
+            </div>
+            <div class="col-md-4">
+              <select class="form-control" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="service1">Web Development</option>
+                <option value="service2">Mobile App Development</option>
+                <option value="service3">Search Engine Optimization</option>
+                <option value="service3">Social media marketing</option>
+                <option value="service3">PPC Management</option>
+                <option value="service3">Design and Branding</option>
+                <option value="service3">Reputation Manmagement</option>
+              </select>
+            </div>
+          </div>
 
-
+          <div style="color: white;">
+            <p>Additional Details</p>
+        </div>
+  
+          <!-- Row 3: Select Start Date, Best Start Date -->
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <select class="form-control" required>
+                <option value="" disabled selected>Select Budget</option>
+                <option value="date1">₹15000-₹50000</option>
+                <option value="date2">₹50000l-₹1.5L</option>
+                <option value="date3">₹1.5l-₹3L</option>
+                <option value="date3">Above 3lacs</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <select class="form-control" required>
+                <option value="" disabled selected>Best Start Date</option>
+                <option value="date1">Immediately</option>
+                <option value="date2">1-4 weeks</option>
+                <option value="date3">1-3 months</option>
+                <option value="date3">3-6 month</option>
+                <option value="date3">Not Sure Yet</option>
+              </select>
+            </div>
+          </div>
+  
+          <!-- Row 4: Contact Box -->
+          <div class="row mb-3">
+            <div class="col-12">
+              <textarea class="form-control" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+          </div>
+  
+          <!-- Submit Button -->
+          <div class="row">
+            <div class="col-12 text-start">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+<!-- request a qote -->
 
 
 

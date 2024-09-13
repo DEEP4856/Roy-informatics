@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content=" Roy Informatics Pvt. Ltd">
+    <meta name="description" content="Roy Informatics is committed to gaining a knowledge of your business and learning about its operations. We are able to guarantee that our marketing plan will be developed with the exclusive goal of providing solutions to the challenges that your company encounters since we create a relationship with each of our customers. ">
+
+    <title> Roy Informatics Pvt. Ltd</title>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav-footer.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+    body {
+      background-color: #fafafa;
+    }
+
+    /* About banner */
+    .blog {
+      background: url('./img/background-2.jpg') no-repeat center center #999;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 400px;
+      display: flex;
+      text-align: left;
+      position: relative;
+      color: #fff;
+    }
+    .blog::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .blog .container {
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      margin-left: 13%;
+    }
+
+    .blog-content > * {
+      max-width: 1000px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    .blog-content.visible > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .blog-content.visible h1 {
+      transition-delay: 0.1s;
+    }
+
+    .blog-content.visible p {
+      transition-delay: 0.2s;
+    }
+
+    .blog-content.visible .btn-slide a {
+      transition-delay: 0.4s;
+    }
+
+    @keyframes fade-out {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }
+
+  
+    .blog-content h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .blog p {
+      font-size: 1.1rem;
+      font-weight: light;
+    }
+
+    .blog .btn {
+      margin-top: 20px;
+      padding: 3px 25px;
+      border-radius: 5%;
+      font-weight: bold;
+    }
+
+    .blog .btn-quick {
+      background-color: #282827af;
+      border-color: #080808ba;
+      color:white
+    }
+
+    .blog .btn-call {
+      background-color: #ffc107;
+      border-color: #ffc107;
+      color: s#1c3461;
+    }
+
+
+    /* --Main Section-- */
+    .main {
+      padding: 5% 13%;
+      @media (max-width: 600px) {
+        padding: 5% 0%;
+      }
+    } 
+    .card-body a {
+        color:#1c3461;
+        text-decoration:none;
+    }
+    .card-body p {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight:lighter;
+        color:#969696;
+    }
+
+
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="./img (2)/logo.jpg" alt="Logo" width="60" height="60">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"  href="#">Who we are</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="about.html">Company</a></li>
+                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                <li><a class="dropdown-item" href="mission&vission.html">Mission and Vission</a></li>
+                <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Training</a></li> -->
+                <li><a class="dropdown-item" href="#"> Blog</a></li>
+                <li><a class="dropdown-item" href="#">Career</a></li>
+                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                <li><a class="dropdown-item" href="conatct.html">Contact us</a></li>
+              </ul>
+          </li>
+          <li class="nav-item  dropdown">
+            <a class="nav-link dropdown-toggle"  href="#">Our Services</a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Web Development</a></li>
+                <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                <li><a class="dropdown-item" href="#">Search Engine Optimization</a></li>
+                <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
+                <li><a class="dropdown-item" href="#">PPC Management</a></li>
+                <li><a class="dropdown-item" href="#">Reputation Management</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hire Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Hire Node JS Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Laravel Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Angular Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Laravel Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire PHP Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Wordpress Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Magneto Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Androied Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire ios Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Flutter Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire React-Native Developer</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#">Industries</a>
+            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">SEO Packages</a></li>
+                <li><a class="dropdown-item" href="#">SMO Packages</a></li>
+                <li><a class="dropdown-item" href="#">ORM Packages</a></li>
+                <li><a class="dropdown-item" href="#">PPC Packages</a></li>
+                <li><a class="dropdown-item" href="#">SMM Packages</a></li>
+              </ul> -->
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Traning</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="partner.html">Partner with Us</a>
+          </li>
+        </ul>
+        <a href="#" class="btn hiring-btn">We Are Hiring !</a>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+  <!-- Top Banner Section -->
+  <section class="blog py-4 align-items-top">
+    <div class="container py-5">
+        <div class="blog-content py-5">
+          <h1>Franchise & Agent Opprtunities</h1>
+          <p> <a href="index.html" style="color: #fff; text-decoration: none;">Home  >> </a> Franchise & Agent Opprtunities </p>
+            <div class="btn-slide">
+             
+                <a class="btn btn-call mt-3" href="">
+                    <h5>Book a meeting</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+  </section>
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const blogContent = document.querySelector('.blog-content');
+        const blogItems = blogContent.children;
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                Array.from(blogItems).forEach((item, index) => {
+                item.style.transitionDelay = `${index * 0.2}s`; 
+                });
+                blogContent.classList.add('visible');
+            } else {
+                blogContent.classList.remove('visible');
+            }
+            });
+        }, { threshold: 0.1 });
+        observer.observe(blogContent);
+        });
+    </script>
+
+   
+
+
+
+<section class="custom-section"></section>
+    <div class="container text-center">
+      <h2>Your Future Starts Now As A Digital Marketing Franchise Owner</h2>
+      <p class="card-description">Are you struggling to get your marketing business off the ground? Have you been searching for a way to increase your revenue? Our marketing agency has doubled in size every year since 2014 using proven consulting strategies and effective marketing systems, and we can help you do the same! It’s time to maximize your success through our RI Agent Program or Digital Marketing Franchise Opportunity. Learn powerful success secrets from our top executives who will empower your growth through our proven training and consulting. Our agent success program allows you to earn residual payments from selling Roy Informatics services. Take our products and services to your client base, utilizing our proven process, branding, and team of professionals to help you expand sales, all while you work flexible and casual hours. Take advantage of the greatest opportunity available for scaling revenue and becoming your own boss.</p>
+      <div class="small-line"></div> 
+      
+      <div class="row card-row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="custom-card animated-card">
+            <img src="./img/new logo/sharing.webp" alt="Logo 1" class="card-logo">
+            <h4>Your Career</h4>
+            <p class="card-description">Backed by the Roy Informatics, you'll be able to reflect the success of our successfull and established digital marketing company in your own business.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="custom-card animated-card">
+            <img src="./img/new logo/mail.webp" alt="Logo 2" class="card-logo">
+            <h4>Your Team</h4>
+            <p class="card-description">Roy Informatics designers, developers and digital marketers are at your disposal. Plus, we take care of project management, hiring and training.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="custom-card animated-card">
+            <img src="./img/new logo/target.webp" alt="Logo 3" class="card-logo">
+            <h4>Ready to Sell</h4>
+            <p class="card-description">All you have to do is go out and make sales! We provide you with the guidance and support you need to connect with business and close deals.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="custom-card animated-card">
+            <img src="./img/new logo/world-globe.webp" alt="Logo 3" class="card-logo">
+            <h4>Residual Income</h4>
+            <p class="card-description">Every client you acquire results in a source of monthly income for you. The more clients you have, the more money you'll make.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="custom-card animated-card">
+            <img src="./img/new logo/money.webp" alt="Logo 3" class="card-logo">
+            <h4>Anytime Anywhere</h4>
+            <p class="card-description">Make your own hours and enjoy the flexibility to work anywhere in the world. Your success is in your control.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="custom-card animated-card">
+            <img src="./img/new logo/data-analytics.webp" alt="Logo 3" class="card-logo">
+            <h4>Ongoing Support</h4>
+            <p class="card-description">We offer continual guided support to ensure you are maximizing revenue streams. Additional guidence is available when needed.</p>
+          </div>
+        </div>
+
+        
+      </div>
+       
+      <!-- Add more rows as needed -->
+    </div>
+  </section>
+
+
+
+
+  <section class="team-section text-center">
+    <div class="container">
+      <!-- Caption for the Section -->
+      <h2 class="section-caption">Compensation Model:</h2>
+      <hr class="section-line">
+      <p class="card-description">You'll receive vendor pricing on our products and services, allowing you to resell them for higher margins to your clients. The compensation model involves a combination of upfront and recurring monthly payments. We'll even teach you how to duplicate and expand, so there's no ceiling to your potential income and growth.</p>
+
+</div>
+    <div class="container">
+      <!-- Caption for the Section -->
+      <h2 class="section-caption">Your Role:</h2>
+      <hr class="section-line">
+      <p class="card-description">The RI Agent Program involves increasing client acquisitions with sales driven by you and supported by us — as you close deals, we'll do the rest, including client care and complete delivery of products and services. Our Digital Marketing Franchise opportunity involves building and scaling a full operation in a new territory, with full support from the RI team.</p>
+
+</div>
+    <div class="container">
+      <!-- Caption for the Section -->
+      <h2 class="section-caption">Quality Assuarance:</h2>
+      <hr class="section-line">
+      <p class="card-description">Our quality assurance team performs a full audit of each project both before and during development. This ensures that the final product meets our quality standards while also ensuring specific security and ease-of-management factors are taken into consideration for a successful website launch.</p>
+
+</div>
+    <div class="container">
+      <!-- Caption for the Section -->
+      <h2 class="section-caption">Low-Cost, High-Return Investment:</h2>
+      <hr class="section-line">
+      <p class="card-description">Compared to other franchise opportunities, Roy Informatics requires a low financial commitment. But the potential return on your investment remains as high as you aim! A Roy Informatics business is yours to run and, along with our world-class support, there’s no limit to your earning potential. In terms of control, it’s having the freedom of being your own boss with the support of a brand, a network, and a proven system behind you.</p>
+
+</div>
+</section>
+
+
+
+
+
+  
+
+  <!-- Footer Section -->
+  <footer class="container-fluid p-0">
+    <!-- First Part: Deep Blue Box with Caption and Number -->
+    <div class="footer-box">
+      <div class="caption">
+       Have an awesome idea & not sure how to get started
+      </div>
+      <div class="number">
+        <h5>📞 +91 8509847108</h5>
+      </div>
+    </div>
+  
+    <!-- Second Part: Black Box with Links -->
+    <div class="link-box">
+      <div class="row">
+        <!-- Company Section -->
+        <div class="col-12 col-md footer-column text-start">
+          <h5>Company</h5>
+          <a class="dropdown-item" href="about.html">About Us</a>
+                <a class="dropdown-item" href="#"> Blog</a>
+                <a class="dropdown-item" href="#">Career</a>
+                <a class="dropdown-item" href="conatct.html">Contact us</a>
+                <a class="dropdown-item" href="Terms&Conditions.html">Terms & Conditions</a>
+                <a class="dropdown-item" href="refundpolicy.html">Refund Policy</a>
+                <a class="dropdown-item" href="privacypolicy.html">Privacy Policy</a>
+        </div>
+  
+        <!-- Services Section -->
+        <div class="col-12 col-md footer-column">
+          <h5>Services</h5>
+          <a class="dropdown-item" href="#">Web Development</a>
+          <a class="dropdown-item" href="#">Mobile App Development</a>
+          <a class="dropdown-item" href="#">Search Engine Optimization</a>
+          <a class="dropdown-item" href="#">Social Media Marketing</a>
+          <a class="dropdown-item" href="#">PPC Management</a>
+          <!-- <a class="dropdown-item" href="#">Design and Branding</a> -->
+          <a class="dropdown-item" href="#">Reputation Management</a>
+        </div>
+  
+        <!-- Hire Us Section -->
+        <div class="col-12 col-md footer-column">
+          <h5>Hire Us</h5>
+          <a class="dropdown-item" href="#">Hire Node JS Developer</a>
+              <a class="dropdown-item" href="#">Hire Laravel Developer</a>
+              <a class="dropdown-item" href="#">Hire Angular Developer</a>
+              <a class="dropdown-item" href="#">Hire Laravel Developer</a>
+              <a class="dropdown-item" href="#">Hire PHP Developer</a>
+              <a class="dropdown-item" href="#">Hire Wordpress Developer</a>
+              <a class="dropdown-item" href="#">Hire Magneto Developer</a>
+              <a class="dropdown-item" href="#">Hire Androied Developer</a>
+              <a class="dropdown-item" href="#">Hire ios Developer</a>
+              <a class="dropdown-item" href="#">Hire Flutter Developer</a>
+              <a class="dropdown-item" href="#">Hire React-Native Developer</a>
+        </div>
+  
+        <!-- Contact Us Section -->
+        <div class="col-12 col-md footer-column text-end">
+          <h5>Contact Us</h5>
+          <p>Registered Office: N0097, Udyog Marg, Paira, Bankura- 722121</p>
+  
+          <!-- Social Media Links -->
+          <div class="social-links">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+  
+          <!-- Certificate Verification -->
+          <div class="certificate-verification">
+            <a href="#">
+              <img src="./img (2)/razorpaylogo.png" style="width: 150px; height: auto; display: block; margin: 20px auto 0; margin-right: -5px;" alt="Razorpay Certificate Verification">
+            </a>
+            Certificate Verification
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Third Part: Deep Blue Box with Copyright -->
+    <div class="copyright-box">
+      © 2024 Roy Informatics Private Limited. All rights reserved.
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
