@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Blogs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="nav-footer.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+    body {
+      background-color: #fafafa;
+    }
+
+    /* About banner */
+    .tNc {
+      background: url('./img/background-2.jpg') no-repeat center center #999;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 320px;
+      display: flex;
+      text-align: left;
+      position: relative;
+      color: #fff;
+    }
+    .tNc::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .tNc .container {
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      margin-left: 13%;
+    }
+
+    .tNc-content > * {
+      max-width: 1000px;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+
+    .tNc-content.visible > * {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .tNc-content.visible h1{
+      transition-delay: 0.1s;
+    }
+
+    .tNc-content.visible p {
+      transition-delay: 2s;
+    }
+
+    @keyframes slideup {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    }
+
+  
+    .tNc-content h1 {
+      font-size: 2.7rem;
+      font-weight: bold;
+    }
+
+    .tNc p {
+      font-size: 1rem;
+      font-weight: lighter;
+    }
+
+    .tNc .btn {
+      font-size: 0.8rem;
+      border-radius: 5%;
+      font-weight: bold;
+    }
+
+
+
+
+    /* --Main Section-- */
+    .main {
+      padding: 5% 13%;
+      @media (max-width: 600px) {
+        padding: 5% 0%;
+      }
+    } 
+    .row h3 {
+        font-family: Helvetica, sans-serif, Arial;
+        color:#1c3461;
+        text-decoration: none;
+    }
+
+   .row p {
+        font-family: Helvetica, sans-serif, Arial;
+        font-weight: lighter;
+        color:#55678d;
+        text-decoration: none;
+        font-size: 1.01rem;
+    }
+
+
+  </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="./img (2)/logo.jpg" alt="Logo" width="60" height="60">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle"  href="#">Who we are</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="about.html">Company</a></li>
+                    <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                    <li><a class="dropdown-item" href="mission&vission.html">Mission and Vission</a></li>
+                    <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                    <!-- <li><a class="dropdown-item" href="#">Training</a></li> -->
+                    <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+                    <li><a class="dropdown-item" href="career.html">Career</a></li>
+                    <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                    <li><a class="dropdown-item" href="conatct.html">Contact us</a></li>
+                </ul>
+            </li>
+            <li class="nav-item  dropdown">
+                <a class="nav-link dropdown-toggle"  href="#">Our Services</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                    <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                    <li><a class="dropdown-item" href="#">Search Engine Optimization</a></li>
+                    <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
+                    <li><a class="dropdown-item" href="#">PPC Management</a></li>
+                    <li><a class="dropdown-item" href="#">Reputation Management</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Hire Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Hire Node JS Developer</a></li>
+                <li><a class="dropdown-item" href="#">Hire Laravel Developer</a></li>
+                <li><a class="dropdown-item" href="#">Hire Angular Developer</a></li>
+                <li><a class="dropdown-item" href="#">Hire Laravel Developer</a></li>
+                <li><a class="dropdown-item" href="#">Hire PHP Developer</a></li>
+                <li><a class="dropdown-item" href="#">Hire Wordpress Developer</a></li>
+                <li><a class="dropdown-item" href="#">Hire Magneto Developer</a></li>
+                <li><a class="dropdown-item" href="#">Hire Androied Developer</a></li>
+                <li><a class="dropdown-item" href="#">Hire ios Developer</a></li>
+                <li><a class="dropdown-item" href="#">Hire Flutter Developer</a></li>
+                <li><a class="dropdown-item" href="#">Hire React-Native Developer</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link  dropdown-toggle" href="#">Industries</a>
+                <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">SEO Packages</a></li>
+                    <li><a class="dropdown-item" href="#">SMO Packages</a></li>
+                    <li><a class="dropdown-item" href="#">ORM Packages</a></li>
+                    <li><a class="dropdown-item" href="#">PPC Packages</a></li>
+                    <li><a class="dropdown-item" href="#">SMM Packages</a></li>
+                </ul> -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Traning</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Partner with Us</a>
+            </li>
+            </ul>
+            <a href="#" class="btn hiring-btn">We Are Hiring !</a>
+        </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- Top Banner Section -->
+    <section class="tNc py-5 align-items-top">
+      <div class="container py-5">
+        <div class="tNc-content py-5">
+          <h1 class="text-white mb-0 lh-1 mb-2 pt-3">Refund Policy</h1>
+          <p>Home<span class="fa fa-angle-double-right ms-2"></span> Refund Policy</p>  
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const blogContent = document.querySelector('.tNc-content');
+        const blogItems = blogContent.children;
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                Array.from(blogItems).forEach((item, index) => {
+                item.style.transitionDelay = `${index * 0.2}s`; 
+                });
+                blogContent.classList.add('visible');
+            } else {
+                blogContent.classList.remove('visible');
+            }
+            });
+        }, { threshold: 0.1 });
+        observer.observe(blogContent);
+        });
+    </script>
+
+    <main class="main" id="top">
+        <section class="text-center bg-white">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-10 col-md-10">
+                        <h3 class="fs-1 fs-lg-2 fw-bold">Refund Policy</h3></br>
+                        <p>Refund is not applicable on domain registration/transfer/renewal, Web Development Service, Mobile App Development Service, cPanel, Plesk, Control Panel, LiteSpeed, Softaculous, Cloud, VPS, Dedicated Server, Paid Support, SSL Certificates, Sitelock, SpamExperts, WHMCS, Windows OS, and any other paid licenses.
+
+                            The modifications done in pricing pattern or policy by the software license company will take effect immediately.
+                            
+                            The money back guarantee is provided on Shared hosting, and Cloud hosting.
+                            
+                            No refund will be made if your Service(s) are suspended or terminated for cause.
+                            
+                            The refund will not cover any kind of taxes, setup fees, refund processing fee, postal charges or any kind of payment processing charges or bank fee(s). There will be no refunds issued in case the web hosting account was involved in violation of our terms of service or any kind of illegal or system resources over-usages or after 7 days period or beyond coverage of our refund policy as noted here.
+                        </p>           
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  
+
+  <!-- Footer Section -->
+    <footer class="container-fluid p-0">
+        <!-- First Part: Deep Blue Box with Caption and Number -->
+        <div class="footer-box">
+        <div class="caption">
+        Have an awesome idea & not sure how to get started
+        </div>
+        <div class="number">
+            <h5>📞 +91 8509847108</h5>
+        </div>
+        </div>
+    
+        <!-- Second Part: Black Box with Links -->
+        <div class="link-box">
+        <div class="row">
+            <!-- Company Section -->
+            <div class="col-12 col-md footer-column text-start">
+            <h5>Company</h5>
+            <a class="dropdown-item" href="about.html">About Us</a>
+                    <a class="dropdown-item" href="blog.html"> Blog</a>
+                    <a class="dropdown-item" href="career.html">Career</a>
+                    <a class="dropdown-item" href="conatct.html">Contact us</a>
+                    <a class="dropdown-item" href="Terms&Conditions.html">Terms & Conditions</a>
+                    <a class="dropdown-item" href="refundpolicy.html">Refund Policy</a>
+                    <a class="dropdown-item" href="privacypolicy.html">Privacy Policy</a>
+            </div>
+    
+            <!-- Services Section -->
+            <div class="col-12 col-md footer-column">
+            <h5>Services</h5>
+            <a class="dropdown-item" href="#">Web Development</a>
+            <a class="dropdown-item" href="#">Mobile App Development</a>
+            <a class="dropdown-item" href="#">Search Engine Optimization</a>
+            <a class="dropdown-item" href="#">Social Media Marketing</a>
+            <a class="dropdown-item" href="#">PPC Management</a>
+            <!-- <a class="dropdown-item" href="#">Design and Branding</a> -->
+            <a class="dropdown-item" href="#">Reputation Management</a>
+            </div>
+    
+            <!-- Hire Us Section -->
+            <div class="col-12 col-md footer-column">
+            <h5>Hire Us</h5>
+            <a class="dropdown-item" href="#">Hire Node JS Developer</a>
+                <a class="dropdown-item" href="#">Hire Laravel Developer</a>
+                <a class="dropdown-item" href="#">Hire Angular Developer</a>
+                <a class="dropdown-item" href="#">Hire Laravel Developer</a>
+                <a class="dropdown-item" href="#">Hire PHP Developer</a>
+                <a class="dropdown-item" href="#">Hire Wordpress Developer</a>
+                <a class="dropdown-item" href="#">Hire Magneto Developer</a>
+                <a class="dropdown-item" href="#">Hire Androied Developer</a>
+                <a class="dropdown-item" href="#">Hire ios Developer</a>
+                <a class="dropdown-item" href="#">Hire Flutter Developer</a>
+                <a class="dropdown-item" href="#">Hire React-Native Developer</a>
+            </div>
+    
+            <!-- Contact Us Section -->
+            <div class="col-12 col-md footer-column text-end">
+            <h5>Contact Us</h5>
+            <p>Registered Office: N0097, Udyog Marg, Paira, Bankura- 722121</p>
+    
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+    
+            <!-- Certificate Verification -->
+            <div class="certificate-verification">
+                <a href="#">
+                <img src="./img (2)/razorpaylogo.png" style="width: 150px; height: auto; display: block; margin: 20px auto 0; margin-right: -5px;" alt="Razorpay Certificate Verification">
+                </a>
+                Certificate Verification
+            </div>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Third Part: Deep Blue Box with Copyright -->
+        <div class="copyright-box">
+        © 2024 Roy Informatics Private Limited. All rights reserved.
+        </div>
+    </footer>
+    <!-- footer section -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
