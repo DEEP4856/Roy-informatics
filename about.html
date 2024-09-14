@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="nav-footer.css">
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+    body {
+      background-color: #fafafa;
+    }
+
+    /* About banner */
+    .about {
+      background: url('./img/about_banner.jpg') no-repeat center center #999;
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 450px;
+      display: flex;
+      text-align: left;
+      position: relative;
+      color: #1c3461;
+    }
+    .about::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .about .container {
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+      margin-left: 13%;
+    }
+
+    .about-content > * {
+      max-width: 1000px;
+      animation: slideUp 0.5s ;
+      animation-fill-mode: both; 
+      transform: translateY(70px);
+      transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    }
+    .about-content.visible {
+      animation: slideup 0.4s ease-out forwards;
+    }
+
+    @keyframes slideup {
+      0% {
+        transform: translateY(70px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+  
+    .about h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .about p {
+      font-size: 1.8rem;
+      font-weight: light;
+    }
+
+    .about .btn {
+      background-color: #ffc107;
+      border-color: #ffc107;
+      color: #000;
+      margin-top: 20px;
+      padding: 3px 25px;
+      border-radius: 0%;
+      font-weight: bold;
+    }
+
+    /* --Main Section-- */
+    .main {
+      padding: 5% 10%;
+      @media (max-width: 600px) {
+        padding: 5% 0%;
+      }
+    }
+
+    /*CEO*/
+    .col-lg-4 {
+      min-height: 400px; 
+      background-position: top;
+    }
+    
+    .bg-holder {
+      background: url('./img/ceo.jpg') no-repeat center center;
+      background-size: cover;
+      background-position: left;
+      color: #c41818;
+      
+    }    
+
+    .ceo-bites h5 {
+      font-size: 1.5rem;
+      color: #1c3461;
+    }
+    .ceo-bites > * {
+        animation: slideUp 0.5s ;
+        animation-fill-mode: both;    
+    }
+    .ceo-bites h5:first-of-type {
+      animation-delay: 0.2s;
+    }
+    .ceo-bites p {
+      animation-delay: 0.2s;
+    }
+    .ceo-bites img:first-of-type {
+      animation-delay: 0.3s;
+    }
+    .ceo-bites h5.text-uppercase {
+      animation-delay: 0.45;
+    }
+    .ceo-bites h6 {
+      animation-delay: 0.48s;
+    }  
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }  
+        
+
+    /* Overview */
+    .text-center {
+      font-weight: bolder;
+      color: #1c3461;
+      margin: 5% 0%;
+    }
+    
+    .text-center hr {
+      width: 8%;/* Start with width 0 for animation */
+      margin: 0 auto;
+      height: 3px;
+      border: 2px solid;
+      border-radius: 10px;
+      background-color: #1c3461;
+      transition: width 1s ease;       
+    }
+
+    .text-center hr.open {
+      width: 8%; 
+    }
+    
+    .column-lg-2 {
+      column-count: 2;
+      column-gap: 2rem;   
+      text-align: justify; 
+    }
+
+    .dropcap::first-letter {
+      float: left;
+      font-size: 3em; 
+      line-height: 1;
+      margin-right: 0.1em; 
+      margin-top: 0.1em;
+      font-weight: medium;
+    }
+
+    blockquote {
+      color: #ffffff; 
+      position: relative;
+      padding: 1em 1em 1em 3em; 
+      border-left: 3px solid #fff; 
+      margin: 1em 0; 
+      font-style: italic; 
+    }
+
+    blockquote::before {
+      content: "\201C"; 
+      font-size: 8em; 
+      color: #bebebe; 
+      position: absolute;
+      left: 0; 
+      top: -0.3em;
+      font-weight: bolder; 
+      font-family: 'Times-new-roman';
+    }
+
+    .card-body  > * {
+      animation: slideUp 0.4s ;
+      animation-fill-mode: both; 
+    }
+
+    .card-body h5 {
+      animation-delay: 0.2s;
+    }
+
+    .card-body h6 {
+      animation-delay: 0.4s;
+    }
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    } 
+
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+          <img src="./img (2)/logo.jpg" alt="Logo" width="60" height="60">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle"  href="#">Who we are</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="about.html">Company</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                  <li><a class="dropdown-item" href="mission&vission.html">Mission and Vission</a></li>
+                  <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                  <!-- <li><a class="dropdown-item" href="#">Training</a></li> -->
+                  <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+                  <li><a class="dropdown-item" href="career.html">Career</a></li>
+                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                  <li><a class="dropdown-item" href="conatct.html">Contact us</a></li>
+              </ul>
+          </li>
+          <li class="nav-item  dropdown">
+              <a class="nav-link dropdown-toggle"  href="#">Our Services</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Web Development</a></li>
+                  <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                  <li><a class="dropdown-item" href="#">Search Engine Optimization</a></li>
+                  <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
+                  <li><a class="dropdown-item" href="#">PPC Management</a></li>
+                  <li><a class="dropdown-item" href="#">Reputation Management</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Hire Us
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Hire Node JS Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Laravel Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Angular Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Laravel Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire PHP Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Wordpress Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Magneto Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Androied Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire ios Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire Flutter Developer</a></li>
+              <li><a class="dropdown-item" href="#">Hire React-Native Developer</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link  dropdown-toggle" href="#">Industries</a>
+              <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">SEO Packages</a></li>
+                  <li><a class="dropdown-item" href="#">SMO Packages</a></li>
+                  <li><a class="dropdown-item" href="#">ORM Packages</a></li>
+                  <li><a class="dropdown-item" href="#">PPC Packages</a></li>
+                  <li><a class="dropdown-item" href="#">SMM Packages</a></li>
+              </ul> -->
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Traning</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Partner with Us</a>
+          </li>
+          </ul>
+          <a href="#" class="btn hiring-btn">We Are Hiring !</a>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+  <!-- Top Banner Section -->
+  <section class="about align-items-center">
+    <div class="container">
+        <div class="about-content">
+          <h1>ABOUT US</h1>
+          <p>Set Your Goals High, And Don’t Stop Till You Get There.</p>
+          <a href="https://api.whatsapp.com/send/?phone=918509847108&text=Hello+there%21+I+want+to+know+more+details+about+your+products+and+services.&type=phone_number&app_absent=0" 
+          class="btn btn-primary">Book a Meeting</a>
+        </div>
+    </div>
+  </section>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const aboutContent = document.querySelector('.about-content');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            aboutContent.classList.add('visible');
+          } else {
+            aboutContent.classList.remove('visible');          
+          }
+        });
+      });
+      observer.observe(aboutContent);
+    });
+  </script>
+
+  <!-- Main Section -->
+  <main class="main" id="top">
+    <section class="bg-100">
+      <!--CEO Section-->
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-lg-4 py-lg-0 position-relative">
+            <div class="bg-holder h-100 rounded-ts-lg rounded-lg-bs-lg rounded-te-lg rounded-lg-te-0"></div>
+          </div>
+          <div class="col-lg-8 px-5 py-6 my-lg-0 bg-white rounded-lg-te-lg rounded-be-lg rounded-bs-lg rounded-lg-bs-0 d-flex align-items-center">
+            <div class="ceo-bites py-5">
+              <h5 class="fw-bold">Message From CEO</h5>
+              <p class="my-4" style="text-align: justify">Roy Informatics is committed to gaining a knowledge of your business and learning about its operations. We are able to guarantee that our marketing plan will be developed with the exclusive goal of providing solutions to the challenges that your company encounters since we create a relationship with each of our customers. Every one of our marketing campaigns is developed keeping the requirements of the customer in mind in order to provide answers to the most pressing marketing issues.</p>
+              <img src="./img/signature.png" alt="CEO" />
+              <h5 class="text-uppercase mt-3 fw-normal mb-1">Prasun Roy</h5>
+              <h6 class="text-500 fw-semi-bold">New Delhi</h6>
+            </div>
+          </div>
+        </div>
+
+         <!--Company Overview-->
+        <div class="overview row mt-6 py-5 mb-0">
+          <div class="text-center col mb-0">
+            <h3 class="fw-bold fs-2 fs-md-3">Company Overview</h3>
+            <hr id="hrOpen"/>
+          </div>
+
+          <div class="col-12">
+            <div class="bg-white px-3 mt-6 px-0 py-5 px-lg-5 rounded-3">
+              <p class="mt-3" style="text-align: justify">We are dedicated to implementing industry standard procedures and remaining current with the most recent developments in digital marketing technology. Every day, new marketing tactics are produced in an effort to discover novel methods by which online visitors might be reached with the appropriate marketing message. Whether it's a paid advertising campaign, new methods to enhance search results, or better means of connecting on social media, we are continually searching for the newest and most inventive ways to link your company with an online audience. This may be in the form of a paid advertising campaign, new ways to improve search results, or improved ways of connecting on social media.</p>
+              <div style="display: flex; justify-content: center;">
+                <blockquote > 
+                  &ldquo; 
+                  <h5 class="fw-normal ms-3 mb-0" style="color:#20407a;; font-size: 1.5rem;"> 
+                    But how do we do it? We like to call it earning the right, <br>walking the talk and playing the game &hellip;
+                  </h5>
+                </blockquote>
+              </div>
+              <p class="column-lg-2 dropcap">
+                We are dedicated to maintaining open communication with each of our customers. The goal of the reports that we provide for our customers is to present them with an insight of the efforts that have gone into their campaign as well as the outcomes. To ensure that our customers receive the highest possible value during the course of our partnership with them, we are transparent about the work that we perform and the process that we follow. We are constantly there to assist and direct them through the process of comprehending how well their campaigns are running, as well as what it is that we can do for them to provide them with additional value.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      window.onload = function() {
+        document.getElementById('hrOpen').classList.add('open');
+      };
+    </script>
+
+    <!-- Leaders Section -->
+    <!--section class="bg-100 text-center">
+      <div class="container">
+        <div class="text-center mb-6">
+          <h3 class="fw-bold fs-2 fs-md-3">Meet our Leadership</h3>
+          <hr id="hrOpen"/>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3 col-lg-3 mt-2">
+            <div class="card border-0 h-100">
+              <img class="card-img-top" style="height: 253px;width: 100%;" src="https://www.royinformatics.com/upload/240111113608WhatsApp Image 2024-01-11 at 11.35.35 AM.jpeg" alt="Prasun Roy" />
+              <div class="card-body">
+                <h5>Prasun Roy</h5>
+                <h6 class="fw-normal text-500">Founder & CEO</h6>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-3 col-lg-3 mt-2">
+            <div class="card border-0 h-100">
+              <img class="card-img-top" style="height: 253px;width: 100%;" src="https://www.royinformatics.com/upload/240111113608WhatsApp Image 2024-01-11 at 11.35.35 AM.jpeg" alt="Prasun Roy" />
+              <div class="card-body">
+                <h5>Prasun Roy</h5>
+                <h6 class="fw-normal text-500">Founder & CEO</h6>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-3 col-lg-3 mt-2">
+            <div class="card border-0 h-100">
+              <img class="card-img-top" style="height: 253px;width: 100%;" src="https://www.royinformatics.com/upload/240111113608WhatsApp Image 2024-01-11 at 11.35.35 AM.jpeg" alt="Prasun Roy" />
+              <div class="card-body">
+                <h5>Prasun Roy</h5>
+                <h6 class="fw-normal text-500">Founder & CEO</h6>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-3 col-lg-3 mt-2">
+            <div class="card border-0 h-100">
+              <img class="card-img-top" style="height: 253px;width: 100%;" src="https://www.royinformatics.com/upload/240111113608WhatsApp Image 2024-01-11 at 11.35.35 AM.jpeg" alt="Prasun Roy" />
+              <div class="card-body">
+                <h5>Prasun Roy</h5>
+                <h6 class="fw-normal text-500">Founder & CEO</h6>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-3 col-lg-3 mt-2">
+            <div class="card border-0 h-100">
+              <img class="card-img-top" style="height: 253px;width: 100%;" src="https://www.royinformatics.com/upload/240111113608WhatsApp Image 2024-01-11 at 11.35.35 AM.jpeg" alt="Prasun Roy" />
+              <div class="card-body">
+                <h5>Prasun Roy</h5>
+                <h6 class="fw-normal text-500">Founder & CEO</h6>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-3 col-lg-3 mt-2">
+            <div class="card border-0 h-100">
+              <img class="card-img-top" style="height: 253px;width: 100%;" src="https://www.royinformatics.com/upload/240111113608WhatsApp Image 2024-01-11 at 11.35.35 AM.jpeg" alt="Prasun Roy" />
+              <div class="card-body">
+                <h5>Prasun Roy</h5>
+                <h6 class="fw-normal text-500">Founder & CEO</h6>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-3 col-lg-3 mt-2">
+            <div class="card border-0 h-100">
+              <img class="card-img-top" style="height: 253px;width: 100%;" src="https://www.royinformatics.com/upload/240111113608WhatsApp Image 2024-01-11 at 11.35.35 AM.jpeg" alt="Prasun Roy" />
+              <div class="card-body">
+                <h5>Prasun Roy</h5>
+                <h6 class="fw-normal text-500">Founder & CEO</h6>
+              </div>
+            </div>
+          </div>                    
+        </div>
+      </div>
+    </section-->
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="container-fluid p-0">
+    <!-- First Part: Deep Blue Box with Caption and Number -->
+    <div class="footer-box">
+      <div class="caption">
+       Have an awesome idea & not sure how to get started
+      </div>
+      <div class="number">
+        <h5>📞 +91 8509847108</h5>
+      </div>
+    </div>
+  
+    <!-- Second Part: Black Box with Links -->
+    <div class="link-box">
+      <div class="row">
+        <!-- Company Section -->
+        <div class="col-12 col-md footer-column text-start">
+          <h5>Company</h5>
+          <a class="dropdown-item" href="about.html">About Us</a>
+                <a class="dropdown-item" href="blog.html"> Blog</a>
+                <a class="dropdown-item" href="career.html">Career</a>
+                <a class="dropdown-item" href="conatct.html">Contact us</a>
+                <a class="dropdown-item" href="Terms&Conditions.html">Terms & Conditions</a>
+                <a class="dropdown-item" href="refundpolicy.html">Refund Policy</a>
+                <a class="dropdown-item" href="privacypolicy.html">Privacy Policy</a>
+        </div>
+  
+        <!-- Services Section -->
+        <div class="col-12 col-md footer-column">
+          <h5>Services</h5>
+          <a class="dropdown-item" href="#">Web Development</a>
+          <a class="dropdown-item" href="#">Mobile App Development</a>
+          <a class="dropdown-item" href="#">Search Engine Optimization</a>
+          <a class="dropdown-item" href="#">Social Media Marketing</a>
+          <a class="dropdown-item" href="#">PPC Management</a>
+          <!-- <a class="dropdown-item" href="#">Design and Branding</a> -->
+          <a class="dropdown-item" href="#">Reputation Management</a>
+        </div>
+  
+        <!-- Hire Us Section -->
+        <div class="col-12 col-md footer-column">
+          <h5>Hire Us</h5>
+          <a class="dropdown-item" href="#">Hire Node JS Developer</a>
+              <a class="dropdown-item" href="#">Hire Laravel Developer</a>
+              <a class="dropdown-item" href="#">Hire Angular Developer</a>
+              <a class="dropdown-item" href="#">Hire Laravel Developer</a>
+              <a class="dropdown-item" href="#">Hire PHP Developer</a>
+              <a class="dropdown-item" href="#">Hire Wordpress Developer</a>
+              <a class="dropdown-item" href="#">Hire Magneto Developer</a>
+              <a class="dropdown-item" href="#">Hire Androied Developer</a>
+              <a class="dropdown-item" href="#">Hire ios Developer</a>
+              <a class="dropdown-item" href="#">Hire Flutter Developer</a>
+              <a class="dropdown-item" href="#">Hire React-Native Developer</a>
+        </div>
+  
+        <!-- Contact Us Section -->
+        <div class="col-12 col-md footer-column text-end">
+          <h5>Contact Us</h5>
+          <p>Registered Office: N0097, Udyog Marg, Paira, Bankura- 722121</p>
+  
+          <!-- Social Media Links -->
+          <div class="social-links">
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+  
+          <!-- Certificate Verification -->
+          <div class="certificate-verification">
+            <a href="#">
+              <img src="./img (2)/razorpaylogo.png" style="width: 150px; height: auto; display: block; margin: 20px auto 0; margin-right: -5px;" alt="Razorpay Certificate Verification">
+            </a>
+            Certificate Verification
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Third Part: Deep Blue Box with Copyright -->
+    <div class="copyright-box">
+      © 2024 Roy Informatics Private Limited. All rights reserved.
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
