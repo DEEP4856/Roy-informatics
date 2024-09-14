@@ -28,12 +28,20 @@
       background-size: cover;
       background-position: center;
       width: 100%;
-      height: 400px;
+      height: 430px;
       display: flex;
       text-align: left;
       position: relative;
       color: #fff;
     }
+
+   @media(max-width:700px){
+    .blog{
+        height: 650px
+    }
+   }
+
+
     .blog::before {
       content: "";
       position: absolute;
@@ -46,7 +54,10 @@
       justify-content: center;
       align-items: center;
       background-position: center;
-      margin-left: 13%;
+      /* margin-left: 13%; */
+      margin-left: 0; /* Adjust the margin for smaller screens */
+  padding: 0 15px; /* Add padding instead of margin */
+  box-sizing: border-box; /* Ensure padding is within the container width */
     }
 
     .blog-content > * {
@@ -102,16 +113,20 @@
       font-weight: bold;
     }
 
-    .blog .btn-quick {
-      background-color: #282827af;
+     .btn-quick {
+      background-color:#1c3461;
       border-color: #080808ba;
       color:white
     }
 
-    .blog .btn-call {
+     .btn-call {
       background-color: #ffc107;
       border-color: #ffc107;
-      color: s#1c3461;
+      color: #1c3461;
+    }
+
+    .btn-slide-num{
+        text-align: center;
     }
 
 
@@ -131,6 +146,105 @@
         font-weight:lighter;
         color:#969696;
     }
+
+
+
+
+   /* feature box */
+   .features-section {
+  background-color: #f9f9f9;
+}
+
+.feature-box {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.feature-box:hover {
+   transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.feature-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.feature-caption {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.feature-description {
+    text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .feature-box {
+    margin-bottom: 20px;
+  }
+}
+
+   /* feature box */
+
+
+
+/* blue boxes */
+
+.custom-boxes-section {
+  background-color: #f9f9f9; /* Background color for the section */
+}
+
+.custom-box {
+  background-color: #1c3461; /* Blue background for the box */
+  padding: 20px;
+  color: white; /* White text for better contrast */
+  /* border-radius: 8px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box-caption {
+    text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.box-description {
+    text-align: center;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #ddd;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .custom-box {
+    margin-bottom: 20px;
+  }
+}
+
+/* blue boxes */
+
+
+
+
+
 
 
   </style>
@@ -217,8 +331,12 @@
   <section class="blog py-4 align-items-top">
     <div class="container py-5">
         <div class="blog-content py-5">
-          <h1>Franchise & Agent Opprtunities</h1>
-          <p> <a href="index.html" style="color: #fff; text-decoration: none;">Home  >> </a> Franchise & Agent Opprtunities </p>
+          <h2>
+            Ranked #1</h2>
+            <h1>Mobile App Development <br> Company in India</h1>
+          <p> <a href="index.html" style="color: #fff; text-decoration: none;">Home  >> </a> Leverage our Services and join the application revolution with us
+
+          </p>
             <div class="btn-slide">
              
                 <a class="btn btn-call mt-3" href="">
@@ -254,60 +372,11 @@
 
 <section class="custom-section"></section>
     <div class="container text-center">
-      <h2>Your Future Starts Now As A Digital Marketing Franchise Owner</h2>
-      <p class="card-description">Are you struggling to get your marketing business off the ground? Have you been searching for a way to increase your revenue? Our marketing agency has doubled in size every year since 2014 using proven consulting strategies and effective marketing systems, and we can help you do the same! It’s time to maximize your success through our RI Agent Program or Digital Marketing Franchise Opportunity. Learn powerful success secrets from our top executives who will empower your growth through our proven training and consulting. Our agent success program allows you to earn residual payments from selling Roy Informatics services. Take our products and services to your client base, utilizing our proven process, branding, and team of professionals to help you expand sales, all while you work flexible and casual hours. Take advantage of the greatest opportunity available for scaling revenue and becoming your own boss.</p>
-      <div class="small-line"></div> 
+      <h1>From concept to app store.</h1>
+      <p class="card-description">Achieve results with a custom Android app.</p>
+     <p class="card-description">Every year, more web users are turning to mobile devices for their general web browsing and research. The availability of a mobile app on their device could be the difference between them signing up with your offerings or going to a competitor that has already leveraged mobile apps. We take what you have to offer and build a high-performance mobile app for the services you provide. Since 2009, our team has been building Android applications with high device compatibility and an intuitive user experience.</p>
       
-      <div class="row card-row">
-        <!-- Card 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="custom-card animated-card">
-            <img src="./img/new logo/sharing.webp" alt="Logo 1" class="card-logo">
-            <h4>Your Career</h4>
-            <p class="card-description">Backed by the Roy Informatics, you'll be able to reflect the success of our successfull and established digital marketing company in your own business.</p>
-          </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="col-md-4 mb-4">
-          <div class="custom-card animated-card">
-            <img src="./img/new logo/mail.webp" alt="Logo 2" class="card-logo">
-            <h4>Your Team</h4>
-            <p class="card-description">Roy Informatics designers, developers and digital marketers are at your disposal. Plus, we take care of project management, hiring and training.</p>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-4 mb-4">
-          <div class="custom-card animated-card">
-            <img src="./img/new logo/target.webp" alt="Logo 3" class="card-logo">
-            <h4>Ready to Sell</h4>
-            <p class="card-description">All you have to do is go out and make sales! We provide you with the guidance and support you need to connect with business and close deals.</p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="custom-card animated-card">
-            <img src="./img/new logo/world-globe.webp" alt="Logo 3" class="card-logo">
-            <h4>Residual Income</h4>
-            <p class="card-description">Every client you acquire results in a source of monthly income for you. The more clients you have, the more money you'll make.</p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="custom-card animated-card">
-            <img src="./img/new logo/money.webp" alt="Logo 3" class="card-logo">
-            <h4>Anytime Anywhere</h4>
-            <p class="card-description">Make your own hours and enjoy the flexibility to work anywhere in the world. Your success is in your control.</p>
-          </div>
-        </div>
-        <div class="col-md-4 mb-4">
-          <div class="custom-card animated-card">
-            <img src="./img/new logo/data-analytics.webp" alt="Logo 3" class="card-logo">
-            <h4>Ongoing Support</h4>
-            <p class="card-description">We offer continual guided support to ensure you are maximizing revenue streams. Additional guidence is available when needed.</p>
-          </div>
-        </div>
-
-        
-      </div>
-       
+      
       <!-- Add more rows as needed -->
     </div>
   </section>
@@ -315,36 +384,183 @@
 
 
 
-  <section class="team-section text-center">
-    <div class="container">
-      <!-- Caption for the Section -->
-      <h2 class="section-caption">Compensation Model:</h2>
-      <hr class="section-line">
-      <p class="card-description">You'll receive vendor pricing on our products and services, allowing you to resell them for higher margins to your clients. The compensation model involves a combination of upfront and recurring monthly payments. We'll even teach you how to duplicate and expand, so there's no ceiling to your potential income and growth.</p>
 
-</div>
-    <div class="container">
-      <!-- Caption for the Section -->
-      <h2 class="section-caption">Your Role:</h2>
-      <hr class="section-line">
-      <p class="card-description">The RI Agent Program involves increasing client acquisitions with sales driven by you and supported by us — as you close deals, we'll do the rest, including client care and complete delivery of products and services. Our Digital Marketing Franchise opportunity involves building and scaling a full operation in a new territory, with full support from the RI team.</p>
 
-</div>
-    <div class="container">
-      <!-- Caption for the Section -->
-      <h2 class="section-caption">Quality Assuarance:</h2>
-      <hr class="section-line">
-      <p class="card-description">Our quality assurance team performs a full audit of each project both before and during development. This ensures that the final product meets our quality standards while also ensuring specific security and ease-of-management factors are taken into consideration for a successful website launch.</p>
 
-</div>
-    <div class="container">
-      <!-- Caption for the Section -->
-      <h2 class="section-caption">Low-Cost, High-Return Investment:</h2>
-      <hr class="section-line">
-      <p class="card-description">Compared to other franchise opportunities, Roy Informatics requires a low financial commitment. But the potential return on your investment remains as high as you aim! A Roy Informatics business is yours to run and, along with our world-class support, there’s no limit to your earning potential. In terms of control, it’s having the freedom of being your own boss with the support of a brand, a network, and a proven system behind you.</p>
+<section class="custom-section"></section>
+    <div class="container text-center">
+      <h1>Count On Us When You Hire Mobile App Developers</h1>
+      <p class="card-description">Are you looking to hire mobile app developers from India at a competitive rate? Here are a few of many reasons for picking us as your trusted app development company.</p>
+    <div class="small-line"></div>
 
-</div>
+      </div>
+      
+      <!-- Add more rows as needed -->
+    </div>
+  </section>
+    
+
+  
+
+
+
+
+   
+  <section class="features-section py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Feature 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="feature-box text-center">
+            <img src="./img/new logo/sharing.webp" alt="Logo 1" class="feature-logo mb-3">
+            <h3 class="feature-caption">Previous Experience</h3>
+            <p class="feature-description">We have a rich portfolio with 125+ apps developed and delivered successfully for a global clientele of various business verticals. With such a vast experience, we can understand the need of the businesses and their customers.Clientsâ€™ Reviews We encourage our customers to check our clientsâ€™ reviews on various popular and trustworthy platforms, such as Google, Clutch,</p>
+          </div>
+        </div>
+  
+        <!-- Feature 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="feature-box text-center">
+            <img src="./img/new logo/data-analytics.webp" alt="Logo 2" class="feature-logo mb-3">
+            <h3 class="feature-caption">Affordable Development Cost</h3>
+            <p class="feature-description">If you compare our pricing with our experience, quality and clientsâ€™ reviews, you will find us as the most affordable mobile app development agency.<br> We provide a detailed project proposal by explaining the functionalities <br>and you wonâ€™t be surprised with any hidden cost..</p>
+          </div>
+        </div>
+  
+        <!-- Feature 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="feature-box text-center">
+            <img src="./img/new logo/target.webp" alt="Logo 3" class="feature-logo mb-3">
+            <h3 class="feature-caption">Communication</h3>
+            <p class="feature-description">We engage a project manager who works as the first point of contact for our clients. At every milestone, we conduct an online demonstration where a team of developers will take you through the development and collect your feedback. Thus, we will keep you updated about the work progress.</p>
+          </div>
+        </div>
+  
+        <!-- Feature 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+          <div class="feature-box text-center">
+            <img src="./img/new logo/world-globe.webp" alt="Logo 4" class="feature-logo mb-3">
+            <h3 class="feature-caption">Clientsâ€™ Reviews</h3>
+            <p class="feature-description">We encourage our customers to check our clientsâ€™ reviews on various popular and trustworthy platforms, such as Google, Clutch, GoodFirms etc. With our rating ranging between 4.5 - 5, you can trust us with the quality and timeline of the project.</p>
+          </div>
+        </div>
+
+        <div class="btn-slide-num">
+            <a class="btn btn-quick me-3 mt-3" href="javascript:void(0)">
+                <h5>QUICK ENQUIRY</h5>
+            </a>
+            <a class="btn btn-call mt-3" href="tel:+917428670132">
+                <h5>📞 0742 867 0132</h5>
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <div class="footer-box">
+    <div class="caption">
+     Have an awesome idea & not sure how to get started
+    </div>
+    <div class="number">
+      <h5>📞 +91 8509847108</h5>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <section class="custom-section"></section>
+  <div class="container text-center">
+    <h1>Advanced Android Application Development - Features We Integrate</h1>
+    <p class="card-description">The new-age applications demand advanced features and functionalities to stand out from the crowd and earn popularity. We offer advanced Android application development services to keep you ahead in the race.
+
+    </p>
+  <div class="small-line"></div>
+
+    </div>
+    
+  </div>
 </section>
+
+<section class="custom-boxes-section py-5">
+    <div class="container">
+      <div class="row">
+        <!-- Row 1: 3 Boxes -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-box">
+            <h3 class="box-caption">GPS Integration</h3>
+            <p class="box-description">  By integrating a GPS feature in your app, we help to enhance navigation.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-box">
+            <h3 class="box-caption">IoT Integration</h3>
+            <p class="box-description"> With it, we increase connectivity among multiple devices running on Android.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-box">
+            <h3 class="box-caption">Barcode &amp; QR Scanner</h3>
+            <p class="box-description"> We equip your app with these features to enhance usersâ€™ convenience.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <!-- Row 2: 3 Boxes -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-box">
+            <h3 class="box-caption">Wearable Integration</h3>
+            <p class="box-description">   We can connect apps with various wearable devicesâ€™ inbuilt sensors.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-box">
+            <h3 class="box-caption">Augmented Reality</h3>
+            <p class="box-description"> Our advanced apps can provide a user-engaging AR experience.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-box">
+            <h3 class="box-caption">Beacon Integration</h3>
+            <p class="box-description"> Leveraging this next-gen technology, we ensure faster exchange of information.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row justify-content-center">
+        <!-- Row 3: 2 Boxes -->
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-box">
+            <h3 class="box-caption">Offline Data Management</h3>
+            <p class="box-description"> We will let the users access your app with limited or no internet connection.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="custom-box">
+            <h3 class="box-caption">Social Integration</h3>
+            <p class="box-description"> We enable users <br>to login via <br>social platforms and <br>also promote social sharing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-slide-num">
+        <a class="btn btn-quick me-3 mt-3" href="javascript:void(0)">
+            <h5>QUICK ENQUIRY</h5>
+        </a>
+        <a class="btn btn-call mt-3" href="tel:+917428670132">
+            <h5>📞 0742 867 0132</h5>
+        </a>
+    </div>
+  </section>
+  
+
+
 
 
 
