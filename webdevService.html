@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content=" Roy Informatics Pvt. Ltd">
+    <meta name="description" content="Roy Informatics is committed to gaining a knowledge of your business and learning about its operations. We are able to guarantee that our marketing plan will be developed with the exclusive goal of providing solutions to the challenges that your company encounters since we create a relationship with each of our customers. ">
+    <title> Roy Informatics Pvt. Ltd</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="nav-footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
+        body {
+        background-color: #fafafa;
+        }
+
+        /* --Main Section-- */
+        .container {
+            padding: 3% 2%;
+            @media (max-width: 600px) {
+                padding: 3% 0%;
+        }
+        } 
+        .heading h3 {
+            font-family: Helvetica, sans-serif, Arial;
+            color:#1c3461;
+            text-decoration: none;
+        }
+
+        .heading p {
+            font-family: Helvetica, sans-serif, Arial;
+            font-weight: lighter;
+            color:#55678d;
+            text-decoration: none;
+            font-size: 1.01rem;
+        }
+
+        hr {
+            width: 0;
+            opacity: 0;
+            margin: 0 auto;
+            height: 3px;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            transition: width 1s ease, opacity 1s ease;      
+        }
+
+        hr.open {
+            width: 8%; 
+            opacity: 1;
+        }
+
+        .sliding > * {
+            animation: slideUp 0.5s ;
+            animation-fill-mode: both;    
+        }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }  
+
+        .service-div  {
+            border:1px solid #000;
+            height: 100%;
+            padding: 10px;
+            border-radius: 25px;
+            background-color: #fff;
+            margin: 10px;
+        }
+        .key-div    {
+            height: 100%;
+            padding: 16px;
+            margin: 10px;
+            background-color:#2a3855;
+        }
+
+        .key-div h5 {
+            color:#fff;
+            font-size: 1.5rem;
+        }
+        .key-div p {
+            font-family: Arial, Helvetica, sans-serif;
+            color:#fff;
+            font-weight: lighter;
+
+        }
+
+        .swiper {
+            width: 100%;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #fff; 
+            padding: 20px;
+            width: 25%;
+        }
+
+        .swiper-slide img {
+            max-width: 100px; 
+            height: 100px;
+        }
+
+
+        .swiper-slide h2 {
+            color: #1c3461;
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .swiper-slide h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1c3461;
+            font-size: 1.10rem;
+            margin: 0.5rem 0 0;
+        }
+
+
+        .swiper-wrapper {
+            display: flex;
+        }
+
+        .swiper-slide {
+            flex: 0 0 auto; 
+        }
+
+
+        @media (max-width: 768px) {
+            .swiper-slide h2 {
+                font-size: 1.75rem;
+            }
+            
+            .swiper-slide h5 {
+                font-size: 1rem;
+            }
+
+            .swiper-slide img {
+                max-width: 70px;
+            }
+        }
+
+         
+    
+        .accordion {
+            background-color: #eee;
+            color: #000;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #2d4a8a;
+            color:#fff;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #fff;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="./img (2)/logo.jpg" alt="Logo" width="60" height="60">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle"  href="#">Who we are</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="about.html">Company</a></li>
+                      <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                      <li><a class="dropdown-item" href="mission&vission.html">Mission and Vission</a></li>
+                      <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                      <!-- <li><a class="dropdown-item" href="#">Training</a></li> -->
+                      <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+                      <li><a class="dropdown-item" href="career.html">Career</a></li>
+                      <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                      <li><a class="dropdown-item" href="conatct.html">Contact us</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item  dropdown">
+                  <a class="nav-link dropdown-toggle"  href="#">Our Services</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="webdevService.html">Web Development</a></li>
+                      <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                      <li><a class="dropdown-item" href="#">Search Engine Optimization</a></li>
+                      <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
+                      <li><a class="dropdown-item" href="#">PPC Management</a></li>
+                      <li><a class="dropdown-item" href="#">Reputation Management</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Hire Us
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="hireNodejs.html">Hire Node JS Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Hire Laravel Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Hire Angular Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Hire Laravel Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Hire PHP Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Hire Wordpress Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Hire Magneto Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Hire Androied Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Hire ios Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Hire Flutter Developer</a></li>
+                  <li><a class="dropdown-item" href="#">Hire React-Native Developer</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link  dropdown-toggle" href="#">Industries</a>
+                  <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">SEO Packages</a></li>
+                      <li><a class="dropdown-item" href="#">SMO Packages</a></li>
+                      <li><a class="dropdown-item" href="#">ORM Packages</a></li>
+                      <li><a class="dropdown-item" href="#">PPC Packages</a></li>
+                      <li><a class="dropdown-item" href="#">SMM Packages</a></li>
+                  </ul> -->
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Traning</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="partner.html">Partner with Us</a>
+              </li>
+              </ul>
+              <a href="#" class="btn hiring-btn">We Are Hiring !</a>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar -->
+
+
+    <!--Banner Section--> 
+    <style>
+         .banner {
+            background: url(./img/web-development-banner.jpg) no-repeat center center #999;
+            background-size: cover;
+            background-position: center bottom;
+            width: 100%;
+            height: 450px;
+            display: flex;
+            text-align: left;
+            position: relative;
+            color: #ffffff;
+        }
+        .banner::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .banner .container {
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            margin-left: 13%;
+        }
+        .banner-content {
+            max-width: 1000px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
+        }
+        .banner-content.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .banner h3 {
+            font-size: 2.4rem;
+            font-weight: bold;
+        }
+        .banner h1 {
+            font-size: 3rem;
+            font-weight: bolder;
+        }
+        .banner p {
+            font-size: 1rem;
+            font-weight: lighter;
+        }
+        .banner .btn {
+            background-color: #ffc107;
+            border-color: #ffc107;
+            color: #000;
+            margin-top: 20px;
+            padding: 0px 30px;
+            border-radius: 5%;
+            font-weight: bold;
+        }
+    </style> 
+    <section class="banner align-items-center">
+        <div class="container mt-5">
+            <div class="banner-content mt-5">
+                <h3 class=" text-white" >Ranked #1</h3>
+                <h1 class="col-md-10 text-white mb-0 lh-1">Web Development Company in India</h1>
+                <p>Build your perfect website. We create powerful brand-centric and functional sites.</p>
+                <div>
+                    <a class="btn btn-warning" href= "https://wa.me/919832920036?text=Hello%20there!%20I%20want%20to%20know%20more%20details%20about%20your%20products%20and%20services." target="_blank">
+                        <h5 style="color:black; font-size: 0.8rem; padding-top: 8px;">BOOK A MEETING</h5>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const tNcContent = document.querySelector('.banner-content');
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                tNcContent.classList.add('visible'); 
+              } else {
+                tNcContent.classList.remove('visible'); 
+              }
+            });
+          });
+          observer.observe(tNcContent);
+        });
+      </script>        
+    <!--banner section-->
+
+
+    <!--Main Content-->
+    <style>
+    </style>
+    <main class="main" id="top">
+        <section class="text-center bg-white mt-2">
+            <div class="container pb-0">
+                <div class="row justify-content-center text-center">
+                    <div class="heading col-10 col-md-10">
+                        <h3 class="fs-1 fs-lg-3 fw-bold">Strategic Web Development Services</h3>
+                        <p>Build the right website from the very start.</p>
+                        <br>
+                        <p>On our website, we perform a strategic analysis for each project to ensure that you understand all of the requirements and that the end product will solve our clients' problems or satisfy their expectations. We look into each pitch to see which direction our client is moving in and whether or not that aim would be beneficial to them in the long run. Our web development services and development aim to enable active customer engagement and assist your company in staying ahead of the competition in this highly competitive online environment. We also help our clients understand what type of website will bring them the most value in the long run, and due to our years of experience building personalized web experiences, our strategists and development team create fast, responsive, and user-friendly web applications, web portals, and e-commerce platforms that are compatible across web browsers.</p>
+                    </div>
+                </div>
+            </div>
+            <br></br>
+
+            <div class="container pt-0">
+                <div class="swiper theme-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-8 text-center " style="border:none;">
+                                    <h2 class="text-center">12+</h2>
+                                    <h5 class="text-center">Successfully Years</h5> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-8 text-center" style="border:none;">
+                                    <h2 class="text-center">400+</h2>
+                                    <h5 class="text-center">Developers Strong</h5> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-8 text-center" style="border:none;">
+                                    <h2 class="text-center">1,200+</h2>
+                                    <h5 class="text-center">Projects Completed</h5> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-8 text-center  " style="border:none;">
+                                    <h2 class="text-center">500+</h2>
+                                    <h5 class="text-center">Global Clients</h5> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-8 text-center  " style="border:none;">
+                                    <h2 class="text-center">99%</h2>
+                                    <h5 class="text-center">Customer Satisfaction</h5> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Our Work Process -->
+        <section class="text-center" style="background-color: #007ec6;">
+            <div class="container">
+                <div class="heading row justify-content-center text-center">
+                    <div class="col-10 col-md-10">
+                        <h3 class="fs-1 fs-lg-3 fw-bold" style="color:#fff;">Our Work Process</h3>
+                        <p style="color:white">Every project is different, and we provide custom-made solutions. However, as the best web developers in India, we take a systematic approach to ensure maximum results. In a number of initiatives, our results-oriented and transparent work approach has proven to be effective. Our results-oriented and transparent work approach have proven effective in several initiatives. For an end-to-end web development service, rely on our website builders. And Before beginning the project, we do extensive market research, competitor analysis, target audience analysis, and client requirements. This allows us to appropriately portray the brand personality throughout the website's elements.</p>
+                        <hr id="short" />
+                    </div>
+                </div>
+                <div class="row mt-2 mt-md-5 justify-content-center" style="font-family: Arial, Helvetica, sans-serif; color:#2a3855; font-weight: normal;">
+                    <div class=" col-md-4 new-div text-center col-lg-4 mt-4">
+                        <div class="sliding service-div">
+                            <div class="ring-icon mx-auto">
+                                <img src="./img/icons/web-design.png" style="height:50px;width:50px;">
+                            </div>
+                            <h5 class="mt-4 fw-bold">Discovery</h5>
+                            <p class="mb-0 mt-3 px-3">
+                                During the discovery phase, we identify the project requirements based on analysis and direction from the client.
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" col-md-4 new-div text-center col-lg-4 mt-4">
+                        <div class="sliding service-div">
+                            <div class="ring-icon mx-auto">
+                                <img src="./img/icons/app-development.png" style="height:50px;width:50px;">
+                            </div>
+                            <h5 class="mt-4 fw-bold">Planning</h5>
+                            <p class="mb-0 mt-3 px-3">
+                                Our team documents all of the technologies, features, and frameworks to be used and developed for the project.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="sliding col-md-4 new-div col-lg-4 text-center mt-4">
+                        <div class="sliding service-div">
+                            <div class="ring-icon mx-auto">
+                                <img src="./img/icons/icons8-paid-search-48.png" style="height:50px;width:50px;">
+                            </div>
+                            <h5 class="mt-4 fw-bold">Design</h5>
+                            <p class="mb-0 mt-3 px-3">
+                                UI elements, typography, and color schemes are selected based on branding requirements and our design research and analysis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 new-div col-lg-4 text-center mt-4">
+                        <div class="sliding service-div">
+                            <div class="ring-icon mx-auto">
+                                <img src="./img/icons/digital-marketing.png" style="height:50px;width:50px;">
+                            </div>
+                            <h5 class="mt-4 fw-bold">Development</h5>
+                            <p class="mb-0 mt-3 px-3">
+                                The development process involves following the created documentation to build the right features and functions.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 new-div col-lg-4 text-center mt-4">
+                        <div class="sliding service-div">
+                            <div class="ring-icon mx-auto">
+                                <img src="./img/icons/icons8-accounting-48.png" style="height:50px;width:50px;">
+                            </div>
+                            <h5 class="mt-4 fw-bold">Deployment</h5>
+                            <p class="mb-0 mt-3 px-3">
+                                Our quality assurance team performs tests to ensure that each feature works properly and performs to expectation.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 new-div col-lg-4 text-center mt-4">
+                        <div class="sliding service-div">
+                            <div class="ring-icon mx-auto">
+                                <img src="./img/icons/reputation.png" style="height:50px;width:50px;">
+                            </div>
+                            <h5 class="mt-4 fw-bold">Maintenance</h5>
+                            <p class="mb-0 mt-3 px-3">
+                                Our web maintenance team monitors ongoing performance in the long-term to prevent issues from occurring.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+                <div class="overflow-hidden">
+                    <div>
+                        <a class="btn btn-primary me-3 mt-3" style="background-color: #2a3855;" data-toggle="modal" data-target="#modalContactForm" href="javascript:void(0)">
+                            <h5 style="color:white">REQUEST A FREE QUOTE</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="bg-white">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="heading text-center mb-6">
+                        <h3 class="fs-1 fs-lg-3 fw-bold">We Use This Platform</h3>
+                        <hr id="short"/>
+                    </div>
+                </div>
+                <div class="swiper theme-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide  ">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-12 text-center  ">
+                                    <img class="rounded-3 mx-auto img-fluid" src="./img/icons/angular.png" alt="Member" />
+                                    <br><br>
+                                    <h5 class="text-center">ANGULAR JS</h5> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide  ">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-12 text-center  ">
+                                    <img class="rounded-3 mx-auto img-fluid" src="./img/icons/nodejs.jpg" alt="Member" />
+                                    <br><br>
+                                    <h5 class="text-center">NODE JS</h5> 
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide  ">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-12 text-center  ">
+                                    <img class="rounded-3 mx-auto img-fluid" src="./img/icons/laravel.png" alt="Member"/>
+                                    <br><br>
+                                    <h5 class="text-center">LARAVEL</h5> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide  ">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-12 text-center  ">
+                                    <img class="rounded-3 mx-auto img-fluid" src="./img/icons/php.png" alt="Member"/>
+                                    <br><br>
+                                    <h5 class="text-center">PHP</h5> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  ">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-12 text-center  ">
+                                    <img class="rounded-3 mx-auto img-fluid" src="./img/icons/wordpress.png" alt="Member"/>
+                                    <br><br>
+                                    <h5 class="text-center">WORDPRESS</h5> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  ">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-12 text-center  ">
+                                    <img class="rounded-3 mx-auto img-fluid" src="./img/icons/magento.png" alt="Member"/>
+                                    <br><br>
+                                    <h5 class="text-center"> MAGENTO </h5> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  ">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-12 text-center  ">
+                                    <img class="rounded-3 mx-auto img-fluid" src="./img/icons/android.png" alt="Member"/>
+                                    <br><br>
+                                    <h5 class="text-center"> ANDROID </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  ">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-12 text-center  ">
+                                    <img class="rounded-3 mx-auto img-fluid" src="./img/icons/ios.png" alt="Member"/>
+                                    <br><br>
+                                    <h5 class="text-center"> IOS </h5> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  ">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-12 text-center  ">
+                                    <img class="rounded-3 mx-auto img-fluid" src="./img/icons/flutter.png" alt="Member"/>
+                                    <br><br>
+                                    <h5 class="text-center"> FLUTTER </h5> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide  ">
+                            <div class="row px-lg-12 justify-content-center">
+                                <div class="col-md-12 text-center  ">
+                                    <img class="rounded-3 mx-auto img-fluid" src="./img/icons/reactnative.png" alt="Member"/>
+                                    <br><br>
+                                    <h5 class="text-center"> REACT JS</h5> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+    
+        <!-- Hire Top Website Designers & Developers -->
+        <section class="text-center" style="background-color: #fafafa;">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="heading text-center">
+                        <h3 class="fs-1 fs-lg-3 fw-bold">Hire Top Website Designers & Developers</h3>
+                        <p class="fs-2 fs-md-3" style="font-size: 18px!important;">If you're looking to hire expert website designers and developers, you've come to the right place to construct a website that stands out in aesthetics and functionality. We have the ability to offer a wide range of services. As we have a comprehensive understanding of website design and exposure across sectors all over the world, we also build websites that provide customers with the best first impression on digital platforms. Here's what we look for when hiring web designers to revitalize your company's online presence. </p>
+                        <hr id="short"/>
+                    </div>
+                </div>
+                <div class="row justify-content-center" style="font-family: Arial, Helvetica, sans-serif; color:#2a3855; font-weight: normal;">
+                    <div class="col-md-3 col-lg-3 mt-4">
+                        <div class="sliding px-3 py-4 px-lg-4">
+                            <div class="overflow-hidden"><img src="./img/icons/sharing.png" alt="icon" height="37"/></div>
+                            <div class="overflow-hidden"><h5 class="mt-3 fw-bold">Great UI / UX</h5></div>
+                            <div class="overflow-hidden">
+                                <p class="mb-0">Our designs have great UI which results in great UX as well.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 mt-4">
+                        <div class="sliding px-3 py-4 px-lg-4">
+                            <div class="overflow-hidden"><img src="./img/icons/data-analytics.png" alt="icon" height="37"/></div>
+                            <div class="overflow-hidden"><h5 class="mt-3 fw-bold">SEO Friendly</h5></div>
+                            <div class="overflow-hidden">
+                                <p class="mb-0">Our websites are built with features to help your website rank higher.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 mt-4">
+                        <div class="sliding px-3 py-4 px-lg-4">
+                            <div class="overflow-hidden"><img src="./img/icons/target.png" alt="icon" height="37"/></div>
+                            <div class="overflow-hidden"><h5 class="mt-3 fw-bold">Responsive Design</h5></div>
+                            <div class="overflow-hidden">
+                                <p class="mb-0">Our Designs are device friendly across all platforms and screen sizes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 mt-4">
+                        <div class="sliding px-3 py-4 px-lg-4">
+                            <div class="overflow-hidden"><img src="./img/icons/world-globe.png" alt="icon" height="37"/></div>
+                            <div class="overflow-hidden"><h5 class="mt-3 fw-bold">Clean Coding</h5></div>
+                            <div class="overflow-hidden">
+                                <p class="mb-0">Coding is kept clean and optimised as per industry standard.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br></br>
+                    <div class="overflow-hidden">
+                        <div>
+                            <a class="btn btn-primary me-3 mt-3" style="background-color: #2a3855;" data-toggle="modal" data-target="#modalContactForm" href="javascript:void(0)">
+                                <h5 style="color:white">REQUEST A FREE QUOTE</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact division -->
+        <section class="text-center text-md-start py-6" style="background-color: #2a3855;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md">
+                        <h4 class="text-white mb-0">Have an awesome idea & not sure how to get started ?</h4>
+                    </div>
+                    <div class="col-md-auto mt-md-0 mt-4">
+                        <a class="btn btn-light rounded-pill" href="tel:+917428670132">
+                            <h5>📞 0742 867 0132</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Comprehensive Web Development Services -->
+        <section class="text-center">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="heading col-10 col-md-10">
+                        <h3 class="fs-1 fs-lg-3 fw-bold">Comprehensive Web Development Services</h3>
+                        <p>As India's leading web development company, we create SEO-friendly, mobile-responsive websites that precisely match your needs. We offer comprehensive services for planning, developing, and maintaining a successful web presence for your company. You can choose the most appropriate web design services from the list below that are applicable to your demands. We have a team of highly trained marketers, designers, and web developers who will manage your website and produce a premium design that prioritizes quality, creativity, and speed. If you're not sure which choice is ideal for you, contact us, and we'll walk you through the technical aspects of the scope of work as well as a pricing estimate.</p>
+                        <hr id="short"/>
+                    </div>
+                </div>
+                <div class="row mt-md-5 justify-content-center">
+                    <div class="col-md-4  text-center col-lg-4 mt-4">
+                        <div class="sliding key-div">
+                            <h5 class="mt-4">eCommerce Website Design</h5>
+                            <p style="color:#fff;" class="mb-0 mt-3 px-3">
+                                We have the expertise in developing top of the line eCommerce websites, native and hybrid mobile applications and PWA. Contact us for a holistic eCommerce Solution for your retail store and offer an amazing shopping experience to your customers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center col-lg-4 mt-4">
+                        <div class="sliding key-div">
+                            <h5 class="mt-4">Web Application Development</h5>
+                            <p style="color:#fff;" class="mb-0 mt-3 px-3">
+                                The web application is built for Royâ€™s Group that offers intellectual business consulting services. Developed with Laravel and jQuery, the web portal has varied features like location-wise search, SMS notification, live video chat, online payment, etc.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 text-center mt-4">
+                        <div class="sliding key-div">
+                            <h5 class="mt-4">Small Business Website</h5>
+                            <p style="color:#fff;" class="mb-0 mt-3 px-3">
+                                For startups, an attractive and informative website can be the first step towards success as it greatly builds the brand and brings in potential clients. With our extensive experience in small business website design, we can help you leverage your market potential within a short span of time.  
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-lg-4 text-center mt-4">
+                        <div class="sliding key-div">
+                            <h5 class="mt-4">Corporate Website Design</h5>
+                            <p style="color:#fff;" class="mb-0 mt-3 px-3">
+                                We have developed several corporate websites for different industries in the course of 15 years. When it comes to custom website designs, we produce unique solutions for each one of our clients. Some of the industries we have served in all these years.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-lg-4 text-center mt-4">
+                        <div class="sliding key-div">
+                            <h5 class="mt-4">Dynamic Website Design</h5>
+                            <p style="color:#fff;" class="mb-0 mt-3 px-3">
+                                An outdated website can negatively impact your business. We offer a complete overhaul in code and appearance of the website. We ensure to craft your site with the latest features and functionalities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4  col-lg-4 text-center mt-4">
+                        <div class="sliding key-div">
+                            <h5 class="mt-4">Custom Website Design</h5>
+                            <p style="color:#fff;" class="mb-0 mt-3 px-3">
+                                Equipped with the advanced technologies, we can craft customized, spectacular and user-friendly web applications to streamline your business. We work on both small and large-scale level.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br></br>
+                <div class="overflow-hidden">
+                        <div>
+                            <a class="btn btn-primary me-3 mt-3" style="background-color: #2a3855;" data-toggle="modal" data-target="#modalContactForm" href="javascript:void(0)">
+                                <h5 style="color:white;">REQUEST A FREE QUOTE</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQs -->
+        <section class="ttm-row faqs-section clearfix" style="background-color: #fafafa;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">                
+                        <div class="section-title with-desc text-center clearfix">
+                            <div class="heading title-header">
+                                <h3 class="fs-1 fs-lg-3 fw-bold">FAQ's</h3>
+                                <p class="title">Before engaging our custom website development services, resolve your queries and confusions. We have answered a few frequently asked questions but if you are still left with some doubts, feel free to ask our experts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row fw-light" style="font-family: Arial, Helvetica, sans-serif; color:#2a3855; font-weight: lighter;">
+                    <button class="accordion">How much does it cost to develop a website?</button>
+                    <div class="panel">
+                        <p>A website development cost depends on multiple factors including the complexity of the site, use of technologies, features and functionalities of the site, number of web pages, and so on. We ensure to offer you an industry-standard solution at a competitive rate. Instead of using a generic template we provide tailor-made web solutions for every business, so you can pay for just what you want. If you want to learn the development cost for your specific project, contact us for a FREE quote.</p>
+                    </div>
+                    <br>
+                    
+                    <button class="accordion">Which technologies are used in developing a web application?</button>
+                    <div class="panel">
+                        <p>We have multiple trendy technologies at our disposal. Depending on the project requirement, our developers use the right tool. For full-stack projects, we use PHP, Laravel, CodeIgniter, Angular, React, Vue.js, HTML5, and Java. For CMS and eCommerce projects, we use WordPress, Drupal, Magento, Shopify, etc. If you are inquisitive about the technologies required for your project, discuss your idea with us. We will outline the major technologies required to transform your idea into reality.</p>
+                    </div>
+                    <br>
+                    
+                    <button class="accordion">Will the website be featured on the search engine?</button>
+                    <div class="panel">
+                        <p>We follow SEO guidelines while developing a website and make sure that it is SEO friendly. However, obtaining a high rank on the search engine will demand you to avail search engine optimization service, PPC service, etc. We offer all kinds of digital marketing services, so you can avail these to drive more visibility and traffic to your site.</p>
+                    </div>
+                    <br>
+
+                    <button class="accordion">Will the website be featured on the search engine?</button>
+                    <div class="panel">
+                        <p>Our clients are the sole owners of their business websites. We are only your development partner but your website belongs to you only. We may use the site for our promotional purpose and feature it in our portfolio. This also helps in promoting your business website.</p>
+                    </div>
+                    <br>
+
+                    <button class="accordion">What about the ownership of the website?</button>
+                    <div class="panel">
+                        <p>Our clients are the sole owners of their business websites. We are only your development partner but your website belongs to you only. We may use the site for our promotional purpose and feature it in our portfolio. This also helps in promoting your business website.</p>
+                    </div>
+                    <br>
+
+                    <button class="accordion">Is there any NDA policy?</button>
+                    <div class="panel">
+                        <p>Yes. As a reliable web development company, we strictly adhere to the NDA (Non-Disclosure Agreement) policy. Before carrying out your project, we will sign an agreement with you and maintain data confidentiality during and after the project completion. Your ideas and data are safe with us.</p>
+                    </div>
+                    <br>
+
+                    <button class="accordion">Is it possible to get a PWA?</button>
+                    <div class="panel">
+                        <p>Yes, we develop Progressive Web Application (PWA). The users can install these web applications on their devicesâ€™ home screen and access offline. The users can also receive push notifications from PWAs. These are highly in demand in the contemporary digital market.</p>
+                    </div>
+                    <br>
+
+                    <button class="accordion">Is it possible to see the website during the development phase?</button>
+                    <div class="panel">
+                        <p>Yes, we closely work with our clients and encourage them to offer valuable feedback. While developing the website on our server, weâ€™ll provide you with a username and secret code so that you can log in and check the progress of your ongoing project.</p>
+                    </div>
+                    <br>
+
+                    <button class="accordion">Are there any undisclosed costs?</button>
+                    <div class="panel">
+                        <p>Not at all. We work with integrity and transparency. We offer a tailor-made solution and discuss the charges with you even before starting the project. Our websites are highly scalable. So if you want to launch an MVP (Minimum Viable Product) and add extra features and functionalities later when your business and budget grows, we will diligently arrange for the same.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        <!-- Contacts division -->
+        <section class="text-center text-md-start py-6" style="background-color: #2a3855;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md">
+                        <h4 class="text-white mb-0">Have an awesome idea & not sure how to get started ?</h4>
+                    </div>
+                    <div class="col-md-auto mt-md-0 mt-4">
+                        <a class="btn btn-light rounded-pill" href="tel:+917428670132">
+                            <h5>📞 0742 867 0132</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        var swiper = new Swiper('.swiper', {
+          autoplay: {
+            delay: 1000, 
+            disableOnInteraction: false 
+          },
+          loop: true, 
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+          },
+          spaceBetween: 30,
+          slidesPerView: 1,
+          breakpoints: {
+            670: {
+              slidesPerView: 2, 
+            },
+            1200: {
+              slidesPerView: 4,
+            }
+          }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hrElement = document.getElementById('short');
+            setTimeout(() => {
+                hrElement.classList.add('open');
+            }, 100); 
+          });
+    </script>
+        
+    <script>   
+        var mySwiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 1000,
+            },
+        });
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
+            });
+        }
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        var statsSwiper = new Swiper('.theme-slider', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false,
+            },
+            breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 4,
+            }
+            }
+        });
+        
+        var platformsSwiper = new Swiper('.theme-slider', {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+            delay: 3000, 
+            disableOnInteraction: false,
+            },
+            breakpoints: {
+            768: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 4,
+            }
+            }
+        });
+        });
+    </script>
+  
+    <!-- Footer Section -->
+    <footer class="container-fluid p-0">
+    
+        <!-- Second Part: Black Box with Links -->
+        <div class="link-box">
+        <div class="row">
+            <!-- Company Section -->
+            <div class="col-12 col-md footer-column text-start">
+            <h5>Company</h5>
+            <a class="dropdown-item" href="about.html">About Us</a>
+                    <a class="dropdown-item" href="#"> Blog</a>
+                    <a class="dropdown-item" href="career.html">Career</a>
+                    <a class="dropdown-item" href="conatct.html">Contact us</a>
+                    <a class="dropdown-item" href="Terms&Conditions.html">Terms & Conditions</a>
+                    <a class="dropdown-item" href="refundpolicy.html">Refund Policy</a>
+                    <a class="dropdown-item" href="privacypolicy.html">Privacy Policy</a>
+            </div>
+    
+            <!-- Services Section -->
+            <div class="col-12 col-md footer-column">
+            <h5>Services</h5>
+            <a class="dropdown-item" href="webdevService.html">Web Development</a>
+            <a class="dropdown-item" href="mobileappdev.html">Mobile App Development</a>
+            <a class="dropdown-item" href="#">Search Engine Optimization</a>
+            <a class="dropdown-item" href="#">Social Media Marketing</a>
+            <a class="dropdown-item" href="#">PPC Management</a>
+            <!-- <a class="dropdown-item" href="#">Design and Branding</a> -->
+            <a class="dropdown-item" href="#">Reputation Management</a>
+            </div>
+    
+            <!-- Hire Us Section -->
+            <div class="col-12 col-md footer-column">
+            <h5>Hire Us</h5>
+            <a class="dropdown-item" href="hireNodejs.html">Hire Node JS Developer</a>
+                <a class="dropdown-item" href="#">Hire Laravel Developer</a>
+                <a class="dropdown-item" href="#">Hire Angular Developer</a>
+                <a class="dropdown-item" href="#">Hire Laravel Developer</a>
+                <a class="dropdown-item" href="#">Hire PHP Developer</a>
+                <a class="dropdown-item" href="#">Hire Wordpress Developer</a>
+                <a class="dropdown-item" href="#">Hire Magneto Developer</a>
+                <a class="dropdown-item" href="#">Hire Androied Developer</a>
+                <a class="dropdown-item" href="#">Hire ios Developer</a>
+                <a class="dropdown-item" href="#">Hire Flutter Developer</a>
+                <a class="dropdown-item" href="#">Hire React-Native Developer</a>
+            </div>
+    
+            <!-- Contact Us Section -->
+            <div class="col-12 col-md footer-column text-end">
+            <h5>Contact Us</h5>
+            <p>Registered Office: N0097, Udyog Marg, Paira, Bankura- 722121</p>
+    
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/company/itzroyinformatics/"><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/itzroyinformatics"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com/itzroyinformatics/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/UCIq5QyIoKSzywlXpewWOCrQ/"><i class="bi bi-youtube"></i></a>
+            </div>
+    
+            <!-- Certificate Verification -->
+            <div class="certificate-verification">
+                <a href="#">
+                <img src="./img (2)/razorpaylogo.png" style="width: 150px; height: auto; display: block; margin: 20px auto 0; margin-right: -5px;" alt="Razorpay Certificate Verification">
+                </a>
+                Certificate Verification
+            </div>
+            </div>
+        </div>
+        </div>
+    
+        <!-- Third Part: Deep Blue Box with Copyright -->
+        <div class="copyright-box">
+        © 2024 Roy Informatics Private Limited. All rights reserved.
+        </div>
+    </footer>
+    <!-- footer section -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+        <div class="modal fade in" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;margin-top:80px;">
+            <div class="modal-dialog p-2" role="document" style="background-color:#ffca00;">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h4 class=" w-100" style="margin-bottom: 0;">REQUEST A QUOTE <br> <b class="text-secondary" style="font-size: 15px;">(ITS FAST, EASY & FREE)</b></h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closebtn()" style="height: 27px;width: 22px;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body mx-3">
+                        <form id="msform" method="post" action="https://www.royinformatics.com/enquiry_modal" class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="form-group" style="margin-bottom: 10px;">
+                                    <input type="text" name="name" minlength="6" class="form-control bg-white border" placeholder="Enter your full name" required style="height: 3.5rem;">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group" style="margin-bottom: 10px;">
+                                    <input type="company_name" name="company_name" minlength="6" class="form-control bg-white border" placeholder="Company Name" required style="height: 3.5rem;">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group" style="margin-bottom: 10px;">
+                                    <input type="city" name="city" minlength="6" class="form-control bg-white border" placeholder="City" required style="height: 3.5rem;">
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group" style="margin-bottom: 10px;">
+                                    <input type="email" name="email" minlength="6" class="form-control bg-white border" placeholder="Enter valid email address" required style="height: 3.5rem;">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="form-group" style="margin-bottom: 10px;">
+                                    <input type="text" name="phone" minlength="10" class="form-control bg-white border" placeholder="Enter 10 digit mobile number" required style="height: 3.5rem;">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="form-group" style="margin-bottom: 10px;">
+                                    <select name="service" minlength="1" class="form-control bg-white border" required
+                                        style="height: 3.5rem;">
+                                        <option value="0" selected disabled>Select A Services</option>
+                                        <option value="Web Development">Web Development</option>
+                                        <option value="Mobile App Development">Mobile App Development</option>
+                                        <option value="eCommerce Development">Search Engine Optimization</option>
+                                        <option value="CMS Development">Social Media Marketing</option>
+                                        <option value="Digital Marketing">PPC Management</option>
+                                        <option value="Design & Branding">Design & Branding</option>
+                                        <option value="Reputation Management">Reputation Management</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="form-group" style="margin-bottom: 10px;">
+                                    <select name="budget" minlength="1" class="form-control bg-white border" required style="height: 3.5rem;">
+                                        <option value="">Select Budget*</option>
+                                        <option value="15000 to 50000">₹15000 to ₹50000</option>
+                                        <option value="50000 to 1.5L">₹50000 to ₹1.5L</option>
+                                        <option value="1.5L to 3L">₹1.5L to 3L</option>
+                                        <option value="Above 3 Lacs">Above 3 Lacs</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="form-group" style="margin-bottom: 10px;">
+                                    <select name="best_start_date" minlength="1" class="form-control bg-white border" required style="height: 3.5rem;">
+                                        <option value="">Best Start Date*</option>
+                                        <option value="Immediately">Immediately</option>
+                                        <option value="1-4 Weeks">1-4 Weeks</option>
+                                        <option value="1-3 Months">1-3 Months</option>
+                                        <option value="3-6 Months">3-6 Months</option>
+                                        <option value="Not Sure Yet">Not Sure Yet</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12" style="padding-bottom:10px;">
+                                <div class="text-center">
+                                    <div>Trusted By 1500+ Domestic & International Clients</div>
+                                    <button type="submit" id="submit" class="ttm-btn ttm-btn-size-md mt-20" style="width: 100%; background-color:#ffca00;" value="">
+                                        <strong>PROCESS MY REQUEST</strong>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--    JavaScripts-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </body>
+</html>
