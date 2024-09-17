@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content=" Roy Informatics Pvt. Ltd">
-    <meta name="description" content="Roy Informatics is committed to gaining a knowledge of your business and learning about its operations. We are able to guarantee that our marketing plan will be developed with the exclusive goal of providing solutions to the challenges that your company encounters since we create a relationship with each of our customers. ">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content=" Roy Informatics Pvt. Ltd">
+  <meta name="description" content="Roy Informatics is committed to gaining a knowledge of your business and learning about its operations. We are able to guarantee that our marketing plan will be developed with the exclusive goal of providing solutions to the challenges that your company encounters since we create a relationship with each of our customers. ">
 
-    <title> Roy Informatics Pvt. Ltd</title>
- 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="nav-footer.css">
+  <title> Roy Informatics Pvt. Ltd</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="nav-footer.css">
   
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
@@ -23,26 +23,18 @@
     }
 
     /* About banner */
-    .blog {
-      background: url('./img/background-2.jpg') no-repeat center center #999;
+    .about {
+      background: url('./img/web-development-banner.jpg') no-repeat center center #999;
       background-size: cover;
       background-position: center;
       width: 100%;
-      height: 430px;
+      height: 450px;
       display: flex;
       text-align: left;
       position: relative;
-      color: #fff;
+      color: #fafbfd;
     }
-
-   @media(max-width:700px){
-    .blog{
-        height: 650px
-    }
-   }
-
-
-    .blog::before {
+    .about::before {
       content: "";
       position: absolute;
       top: 0;
@@ -50,70 +42,118 @@
       width: 100%;
       height: 100%;
     }
-    .blog .container {
+    .about .container {
       justify-content: center;
       align-items: center;
       background-position: center;
-      /* margin-left: 13%; */
-      margin-left: 0; /* Adjust the margin for smaller screens */
-  padding: 0 15px; /* Add padding instead of margin */
-  box-sizing: border-box; /* Ensure padding is within the container width */
+      margin-left: 13%;
     }
 
-    .blog-content > * {
+    .about-content > * {
       max-width: 1000px;
-      opacity: 0;
-      transform: translateY(50px);
+      animation: slideUp 0.5s ;
+      animation-fill-mode: both; 
+      transform: translateY(70px);
       transition: opacity 0.5s ease-out, transform 0.5s ease-out;
     }
-
-    .blog-content.visible > * {
-      opacity: 1;
-      transform: translateY(0);
+    .about-content.visible {
+      animation: slideup 0.4s ease-out forwards;
+      margin-top: 6em;
     }
 
-    .blog-content.visible h1 {
-      transition-delay: 0.1s;
+
+    @media (max-width:500px){
+        .about{
+            height: 530px;
+        }
     }
 
-    .blog-content.visible p {
-      transition-delay: 0.2s;
-    }
 
-    .blog-content.visible .btn-slide a {
-      transition-delay: 0.4s;
-    }
-
-    @keyframes fade-out {
-    0% {
-        transform: translateY(20px);
+    @keyframes slideup {
+      0% {
+        transform: translateY(70px);
         opacity: 0;
-    }
-    100% {
+      }
+      100% {
         transform: translateY(0);
         opacity: 1;
+      }
     }
-    }
-
   
-    .blog-content h1 {
-      font-size: 3rem;
+    .about h1 {
+      font-size: 3.5rem;
       font-weight: bold;
+      text-transform: uppercase;
     }
 
-    .blog p {
-      font-size: 1.1rem;
+    .about p {
+      font-size: 1.8rem;
       font-weight: light;
     }
 
-    .blog .btn {
+    .about .btn {
+      background-color: #ffc107;
+      border-color: #ffc107;
+      color: #000;
       margin-top: 20px;
       padding: 3px 25px;
-      border-radius: 5%;
+      border-radius: 0%;
       font-weight: bold;
     }
 
-     .btn-quick {
+
+
+
+    /* --Main Section-- */
+    .main {
+      padding: 5% 10%;
+      @media (max-width: 600px) {
+        padding: 5% 0%;
+      }
+    }
+
+
+ 
+
+    .ceo-bites h5 {
+      font-size: 1.5rem;
+      color: #1c3461;
+    }
+    .ceo-bites > * {
+        animation: slideUp 0.5s ;
+        animation-fill-mode: both;    
+    }
+    .ceo-bites h5:first-of-type {
+      animation-delay: 0.2s;
+    }
+    .ceo-bites p {
+      animation-delay: 0.2s;
+    }
+    .ceo-bites img:first-of-type {
+      animation-delay: 0.3s;
+    }
+    .ceo-bites h5.text-uppercase {
+      animation-delay: 0.45;
+    }
+    .ceo-bites h6 {
+      animation-delay: 0.48s;
+    }  
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }  
+        
+  
+
+/* button */
+.btn-quick {
       background-color:#1c3461;
       border-color: #080808ba;
       color:white
@@ -128,24 +168,7 @@
     .btn-slide-num{
         text-align: center;
     }
-
-
-    /* --Main Section-- */
-    .main {
-      padding: 5% 13%;
-      @media (max-width: 600px) {
-        padding: 5% 0%;
-      }
-    } 
-    .card-body a {
-        color:#1c3461;
-        text-decoration:none;
-    }
-    .card-body p {
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight:lighter;
-        color:#969696;
-    }
+/* button */
 
 
 
@@ -153,9 +176,7 @@
 
 
 
-
-
-   /* feature box */
+  * /* feature box */
    .features-section {
   background-color: #f9f9f9;
 }
@@ -200,10 +221,6 @@
 }
 
    /* feature box */
-
-
-
-
 
 
 
@@ -255,10 +272,9 @@
 
 
 
-
   /* Styling for FAQ Question */
   /* Styling for FAQ Question */
-.faq{
+  .faq{
   margin-bottom: 2em;
 }
 
@@ -302,6 +318,13 @@
 
 
 
+
+
+
+
+
+ 
+
   </style>
 </head>
 <body>
@@ -309,43 +332,43 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="./img (2)/logo.jpg" alt="Logo" width="60" height="60">
+          <img src="./img (2)/logo.jpg" alt="Logo" width="60" height="60">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+          <ul class="navbar-nav">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle"  href="#">Who we are</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="about.html">Company</a></li>
-                <li><a class="dropdown-item" href="team.html">Our Team</a></li>
-                <li><a class="dropdown-item" href="mission&vission.html">Mission and Vission</a></li>
-                <li><a class="dropdown-item" href="#">Portfolio</a></li>
-                <!-- <li><a class="dropdown-item" href="#">Training</a></li> -->
-                <li><a class="dropdown-item" href="#"> Blog</a></li>
-                <li><a class="dropdown-item" href="career.html">Career</a></li>
-                <li><a class="dropdown-item" href="#">Testimonials</a></li>
-                <li><a class="dropdown-item" href="conatct.html">Contact us</a></li>
+              <a class="nav-link dropdown-toggle"  href="#">Who we are</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="about.html">Company</a></li>
+                  <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                  <li><a class="dropdown-item" href="mission&vission.html">Mission and Vission</a></li>
+                  <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                  <!-- <li><a class="dropdown-item" href="#">Training</a></li> -->
+                  <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+                  <li><a class="dropdown-item" href="career.html">Career</a></li>
+                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                  <li><a class="dropdown-item" href="conatct.html">Contact us</a></li>
               </ul>
           </li>
           <li class="nav-item  dropdown">
-            <a class="nav-link dropdown-toggle"  href="#">Our Services</a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Web Development</a></li>
-                <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
-                <li><a class="dropdown-item" href="#">Search Engine Optimization</a></li>
-                <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
-                <li><a class="dropdown-item" href="#">PPC Management</a></li>
-                <li><a class="dropdown-item" href="#">Reputation Management</a></li>
+              <a class="nav-link dropdown-toggle"  href="#">Our Services</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Web Development</a></li>
+                  <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                  <li><a class="dropdown-item" href="#">Search Engine Optimization</a></li>
+                  <li><a class="dropdown-item" href="#">Social Media Marketing</a></li>
+                  <li><a class="dropdown-item" href="#">PPC Management</a></li>
+                  <li><a class="dropdown-item" href="#">Reputation Management</a></li>
               </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Hire Us
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Hire Node JS Developer</a></li>
               <li><a class="dropdown-item" href="#">Hire Laravel Developer</a></li>
               <li><a class="dropdown-item" href="#">Hire Angular Developer</a></li>
@@ -357,144 +380,111 @@
               <li><a class="dropdown-item" href="#">Hire ios Developer</a></li>
               <li><a class="dropdown-item" href="#">Hire Flutter Developer</a></li>
               <li><a class="dropdown-item" href="#">Hire React-Native Developer</a></li>
-            </ul>
+              </ul>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="#">Industries</a>
-            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">SEO Packages</a></li>
-                <li><a class="dropdown-item" href="#">SMO Packages</a></li>
-                <li><a class="dropdown-item" href="#">ORM Packages</a></li>
-                <li><a class="dropdown-item" href="#">PPC Packages</a></li>
-                <li><a class="dropdown-item" href="#">SMM Packages</a></li>
+              <a class="nav-link  dropdown-toggle" href="#">Industries</a>
+              <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">SEO Packages</a></li>
+                  <li><a class="dropdown-item" href="#">SMO Packages</a></li>
+                  <li><a class="dropdown-item" href="#">ORM Packages</a></li>
+                  <li><a class="dropdown-item" href="#">PPC Packages</a></li>
+                  <li><a class="dropdown-item" href="#">SMM Packages</a></li>
               </ul> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Traning</a>
+              <a class="nav-link" href="#">Traning</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="partner.html">Partner with Us</a>
+              <a class="nav-link" href="partner.html">Partner with Us</a>
           </li>
-        </ul>
-        <a href="#" class="btn hiring-btn">We Are Hiring !</a>
+          </ul>
+          <a href="#" class="btn hiring-btn">We Are Hiring !</a>
       </div>
     </div>
   </nav>
   <!-- navbar -->
 
   <!-- Top Banner Section -->
-  <section class="blog py-4 align-items-top">
-    <div class="container py-5">
-        <div class="blog-content py-5">
-          <h2>
-            Ranked #1</h2>
-            <h1>Mobile App Development <br> Company in India</h1>
-          <p> <a href="index.html" style="color: #fff; text-decoration: none;">Home  >> </a> Leverage our Services and join the application revolution with us
-
-          </p>
-            <div class="btn-slide">
-             
-                <a class="btn btn-call mt-3" href="">
-                    <h5>Book a meeting</h5>
-                </a>
-            </div>
+  <section class="about align-items-center">
+    <div class="container">
+        <div class="about-content">
+          <h1>Ranked #1</h1>
+          <h3>Social Media Marketing Company in India</h3>
+          <p>join the Social Media Marketing revolution with us.</p>
+          <a href="https://api.whatsapp.com/send/?phone=918509847108&text=Hello+there%21+I+want+to+know+more+details+about+your+products+and+services.&type=phone_number&app_absent=0" 
+          class="btn btn-primary">Book a Meeting</a>
         </div>
     </div>
   </section>
   <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const blogContent = document.querySelector('.blog-content');
-        const blogItems = blogContent.children;
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                Array.from(blogItems).forEach((item, index) => {
-                item.style.transitionDelay = `${index * 0.2}s`; 
-                });
-                blogContent.classList.add('visible');
-            } else {
-                blogContent.classList.remove('visible');
-            }
-            });
-        }, { threshold: 0.1 });
-        observer.observe(blogContent);
+    document.addEventListener('DOMContentLoaded', function() {
+      const aboutContent = document.querySelector('.about-content');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            aboutContent.classList.add('visible');
+          } else {
+            aboutContent.classList.remove('visible');          
+          }
         });
-    </script>
-
-   
-
-
-
+      });
+      observer.observe(aboutContent);
+    });
+  </script>
+<!-- top nbanner -->
+ 
 <section class="custom-section">
-    <div class="container text-center">
-      <h1>From concept to app store.</h1>
-      <p class="card-description">Achieve results with a custom Android app.</p>
-     <p class="card-description">Every year, more web users are turning to mobile devices for their general web browsing and research. The availability of a mobile app on their device could be the difference between them signing up with your offerings or going to a competitor that has already leveraged mobile apps. We take what you have to offer and build a high-performance mobile app for the services you provide. Since 2009, our team has been building Android applications with high device compatibility and an intuitive user experience.</p>
-      
-      
-      <!-- Add more rows as needed -->
+<div class="container text-center" >
+    <h1>Easy & Structured Social Engagements</h1>
+    <p>Our social media tools handle conversations efficiently.
+
+    </p>
+    <p class="card-description">
+        It's one thing to be able to generate engagement; being able to take full advantage of it is a whole other challenge. While generating large numbers of engaging conversations and interactions online can lead to great opportunities, failure to follow up on them can be damaging. Our team utilizes unique social media tools to bring all of your brand's conversations and engagements into one place. Each engagement is handled quickly and each opportunity for a sale is communicated to ensure that no opportunity falls to the wayside.</p>
+  <div class="small-line"></div>
+
     </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="custom-section"></section>
-    <div class="container text-center">
-      <h1>Count On Us When You Hire Mobile App Developers</h1>
-      <p class="card-description">Are you looking to hire mobile app developers from India at a competitive rate? Here are a few of many reasons for picking us as your trusted app development company.</p>
-    <div class="small-line"></div>
-
-      </div>
-      
-      <!-- Add more rows as needed -->
-    </div>
-  </section>
     
+    <!-- Add more rows as needed -->
+  </div>
+</section>
+
+
+
+
 
   
-
-
-
-
    
-  <section class="features-section py-5">
+ 
+<section class="custom-section"></section>
+<div class="container text-center">
+  <h1>Trusted Social Media Marketing Agency - Partner with Us</h1>
+  <p class="card-description">As a full-time social media marketing agency in India, we have a dedicated team of expert marketers who develop bespoke campaigns for your business. Hire social media marketing experts from us to lead your brand toward popularity.</p>
+<div class="small-line"></div>
+
+  </div>
+  
+  <!-- Add more rows as needed -->
+</div>
+</section> 
+   
+
+
+
+
+
+
+   <!--feature box  -->
+<section class="features-section py-5">
     <div class="container">
       <div class="row">
         <!-- Feature 1 -->
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
           <div class="feature-box text-center">
             <img src="./img/new logo/sharing.webp" alt="Logo 1" class="feature-logo mb-3">
-            <h3 class="feature-caption">Previous Experience</h3>
-            <p class="feature-description">We have a rich portfolio with 125+ apps developed and delivered successfully for a global clientele of various business verticals. With such a vast experience, we can understand the need of the businesses and their customers.Clientsâ€™ Reviews We encourage our customers to check our clientsâ€™ reviews on various popular and trustworthy platforms, such as Google, Clutch,</p>
+            <h3 class="feature-caption">Agility</h3>
+            <p class="feature-description">Get quick, lead-oriented, industry-specific social media marketing services that work.</p>
           </div>
         </div>
   
@@ -502,8 +492,8 @@
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
           <div class="feature-box text-center">
             <img src="./img/new logo/data-analytics.webp" alt="Logo 2" class="feature-logo mb-3">
-            <h3 class="feature-caption">Affordable Development Cost</h3>
-            <p class="feature-description">If you compare our pricing with our experience, quality and clientsâ€™ reviews, you will find us as the most affordable mobile app development agency.<br> We provide a detailed project proposal by explaining the functionalities <br>and you wonâ€™t be surprised with any hidden cost..</p>
+            <h3 class="feature-caption">Management</h3>
+            <p class="feature-description">We have dedicated social media marketers for campaign monitoring, upgrading and maintenance.</p>
           </div>
         </div>
   
@@ -511,8 +501,8 @@
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
           <div class="feature-box text-center">
             <img src="./img/new logo/target.webp" alt="Logo 3" class="feature-logo mb-3">
-            <h3 class="feature-caption">Communication</h3>
-            <p class="feature-description">We engage a project manager who works as the first point of contact for our clients. At every milestone, we conduct an online demonstration where a team of developers will take you through the development and collect your feedback. Thus, we will keep you updated about the work progress.</p>
+            <h3 class="feature-caption">Consistency</h3>
+            <p class="feature-description">We keep upgrading our strategies to maintain consistency in our performance.</p>
           </div>
         </div>
   
@@ -520,8 +510,8 @@
         <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
           <div class="feature-box text-center">
             <img src="./img/new logo/world-globe.webp" alt="Logo 4" class="feature-logo mb-3">
-            <h3 class="feature-caption">Clientsâ€™ Reviews</h3>
-            <p class="feature-description">We encourage our customers to check our clientsâ€™ reviews on various popular and trustworthy platforms, such as Google, Clutch, GoodFirms etc. With our rating ranging between 4.5 - 5, you can trust us with the quality and timeline of the project.</p>
+            <h3 class="feature-caption">Results-Driven</h3>
+            <p class="feature-description">All our activities are driven by the main objective <br>– Generating more <br>business.</p>
           </div>
         </div>
 
@@ -536,9 +526,10 @@
       </div>
     </div>
   </section>
-  
+<!-- feature box -->
 
-  <div class="footer-box">
+
+<div class="footer-box">
     <div class="caption">
      Have an awesome idea & not sure how to get started
     </div>
@@ -553,11 +544,13 @@
 
 
 
-
-  <section class="custom-section"></section>
+<!-- our custom social media marketing service -->
+<section class="custom-section"></section>
   <div class="container text-center">
-    <h1>Advanced Android Application Development - Features We Integrate</h1>
-    <p class="card-description">The new-age applications demand advanced features and functionalities to stand out from the crowd and earn popularity. We offer advanced Android application development services to keep you ahead in the race.
+    <h1>Our Custom Social Media Marketing Services</h1>
+    <p class="card-description">All social media platforms are unique and should be treated accordingly when optimizing them for individual brands. For example, a retail business will do good on Facebook, a web agency will generate more leads on LinkedIn and photography website will create havoc on Instagram. At Webguru Infosystems, our social media management services leverage the different flavours of each platform to build you a strong presence in the social media. We launch, develop and monitor campaigns based on your target demographic roping in your business specifics.
+
+
 
     </p>
   <div class="small-line"></div>
@@ -573,20 +566,20 @@
         <!-- Row 1: 3 Boxes -->
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="custom-box">
-            <h3 class="box-caption">GPS Integration</h3>
-            <p class="box-description">  By integrating a GPS feature in your app, we help to enhance navigation.</p>
+            <h3 class="box-caption">Content Creation &amp; Marketing</h3>
+            <p class="box-description">  Using premium stock images, custom made graphics, or unique assets provided by you, we can create visual content including static image, video, infographic, carousals etc. Our in-house graphic designers, copywriters and marketing experts work closely to craft engaging posts that drive attention and encourage a positive brand impression.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="custom-box">
-            <h3 class="box-caption">IoT Integration</h3>
-            <p class="box-description"> With it, we increase connectivity among multiple devices running on Android.</p>
+            <h3 class="box-caption">Facebook Page Management</h3>
+            <p class="box-description"> W Facebook page creation, post designing and upload, Facebook Ad management, monitoring campaign performance,<br> replying to the potential customers’ queries, <br>increasing your <br>follower base with engaging posts –<br> we do it all.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="custom-box">
-            <h3 class="box-caption">Barcode &amp; QR Scanner</h3>
-            <p class="box-description"> We equip your app with these features to enhance usersâ€™ convenience.</p>
+            <h3 class="box-caption">Twitter Account Management</h3>
+            <p class="box-description">Powerful words and trending hashtags – these define Twitter. And our experts are the artists of the both. Our strategic Twitter marketing will positively impact your brand-building goal. With a blend of creativity and a set of tactics, we can help to develop a brand authority on this micro-blogging platform.</p>
           </div>
         </div>
       </div>
@@ -595,20 +588,20 @@
         <!-- Row 2: 3 Boxes -->
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="custom-box">
-            <h3 class="box-caption">Wearable Integration</h3>
-            <p class="box-description">   We can connect apps with various wearable devicesâ€™ inbuilt sensors.</p>
+            <h3 class="box-caption">LinkedIn Profile Management</h3>
+            <p class="box-description">  Reflect the professionalism of your business on this global networking channel for professionals. Both B2B and B2C marketers can be benefitted by an authoritative presence on this platform and develop a large network of the like-minded professionals.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="custom-box">
-            <h3 class="box-caption">Augmented Reality</h3>
-            <p class="box-description"> Our advanced apps can provide a user-engaging AR experience.</p>
+            <h3 class="box-caption">Instagram Marketing</h3>
+            <p class="box-description">Level up your user engagement rate with our Instagram marketing expertise. With high-end visuals, short and catchy video, one-tap shopping destination – the dynamic social media ecosystem can help you generate more leads and drive conversions.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="custom-box">
-            <h3 class="box-caption">Beacon Integration</h3>
-            <p class="box-description"> Leveraging this next-gen technology, we ensure faster exchange of information.</p>
+            <h3 class="box-caption">Pinterest Marketing</h3>
+            <p class="box-description"> Pins, Feeds and Boards – we specialize in blending the art of all the aspects of Pinterest lifecycle to drive results and satisfy our clients.<br> We’ll create catchy, innovative, and creative visuals to keep your users engaged and generate leads.</p>
           </div>
         </div>
       </div>
@@ -617,14 +610,14 @@
         <!-- Row 3: 2 Boxes -->
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="custom-box">
-            <h3 class="box-caption">Offline Data Management</h3>
-            <p class="box-description"> We will let the users access your app with limited or no internet connection.</p>
+            <h3 class="box-caption">Social PPC</h3>
+            <p class="box-description"> If you want to make the most of your social media marketing efforts, opt for a PPC campaign. Both the start-ups and established businesses can drive higher visibility, leads, and ROI through a compelling PPC campaign. Our marketing experts specialize in crafting results-driven PPC campaign for any social media channel.</p>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="custom-box">
-            <h3 class="box-caption">Social Integration</h3>
-            <p class="box-description"> We enable users <br>to login via <br>social platforms and <br>also promote social sharing.</p>
+            <h3 class="box-caption">Community Management</h3>
+            <p class="box-description">  Our social media activities will help to develop a community revolving around your niche. Through meaningful and informative conversation with your potential customers we can ensure that your business is always on the driving-seat in the competitive digital realm.</p>
           </div>
         </div>
       </div>
@@ -639,15 +632,21 @@
     </div>
   </section>
   
+  
+<!-- our custom social media marketing service -->
 
 
 
+
+
+
+<!-- FAQ -->
+ 
 <!-- last faq section -->
 <section class="custom-section"></section>
 <div class="container text-center">
-  <h1>Your Questions for a Mobile App Development Company</h1>
-  <p class="card-description">Before engaging our mobile app development services, clear all your confusions. Below, we will answer a few frequently asked questions. If you still have any query, feel free to talk to our experts.
-
+  <h1>Social Media Marketing Services – FAQ</h1>
+  <p class="card-description">Before you engage our social media marketing services, clear all your doubts. We have compiled and answered a few frequently asked questions. After going through the following question-answers, if you still have any query, feel free to ask our experts.
   </p>
 <div class="small-line"></div>
 
@@ -662,33 +661,35 @@
     <!-- FAQ Item 1 -->
     <div class="faq">
       <div class="faq-header" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false">
-        <span>Which is better between a native app and hybrid app</span>
+        <span>Is it essential to market on all the social media platforms?</span>
         <span class="faq-toggle">+</span>
       </div>
       <div id="faq1" class="collapse faq-body">
-        <p>Go for a native app if you are looking for smoother user interaction and faster loading experience. However, native apps will cost you more. On the other hand, a hybrid app is a perfect solution if you have a limited budget and time to invest.</p>
+        <p>No. There are various platforms and marketing models available once it comes to social media marketing. The one(s) you should select depends on your target audience, type of business, your objective, and so on. If you are not sure which platform is ideal for you, share your requirements and business aim with our experts. We will analyse the target audience and your competitors and recommend the right platform and marketing model for your business.</p>
       </div>
     </div>
   
     <!-- FAQ Item 2 -->
     <div class="faq">
       <div class="faq-header" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
-        <span>Is it possible to connect the existing CRM or website to the mobile app</span>
+        <span>What is the best social media marketing strategy?</span>
         <span class="faq-toggle">+</span>
       </div>
       <div id="faq2" class="collapse faq-body">
-        <p>Yes, if you have the API documentation of your existing digital destination, you can share it with us. Our mobile app developers will integrate it with the application.</p>
+        <p>There’s no one-size-fits-all strategy in social media marketing. Instead of following an Omni strategy, we analyse the business nature, goals, target audience, and competitors to craft unique strategies for each business. Depending on the response, we bring modification in our campaigns to maximize the impact.</p>
       </div>
     </div>
   
     <!-- FAQ Item 3 -->
     <div class="faq">
       <div class="faq-header" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
-        <span>How to choose the right mobile app development company in India?</span>
+        <span>How to leverage the fullest potential of social media marketing?</span>
         <span class="faq-toggle">+</span>
       </div>
       <div id="faq3" class="collapse faq-body">
-        <p>When you look for a mobile app development company in India, you will be overwhelmed with a massive number of results. To make a choice, you need to take several things into consideration. For instance, check the companyâ€™s work portfolio, learn about their experience, and read their clientsâ€™ reviews. Last but not the least, make sure to talk to the experts to ensure if they can turn your dream into a reality.</p>
+        <p>Social media marketing performs the best when:
+            The activities involve an in-depth research of the audience behaviour
+            The campaigns are customized to convey the topical concern of the brand</p>
       </div>
     </div>
   
@@ -704,10 +705,13 @@
   });
   </script>
 <!-- last faq section -->
+<!-- FAQ -->
 
 
 
-  
+
+
+   
 
   <!-- Footer Section -->
   <footer class="container-fluid p-0">
@@ -796,8 +800,5 @@
   <!-- footer section -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="index.js"></script>
-
- 
 </body>
 </html>
