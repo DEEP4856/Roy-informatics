@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,650;1,600&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -10,10 +14,10 @@ body {
   html, body {
     height: 100%;
     margin: 0;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
-
-
-
 
 
 

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="nav-footer.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&display=swap');
@@ -318,6 +319,170 @@
 
 
 
+  /* swiper */
+ /* Swiper Container */
+ .swiper-container {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Transparent Boxes */
+.box {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent box */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #14284d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px; /* Adjust as needed */
+}
+
+/* Large Caption */
+.caption {
+  font-size: 4em; /* Large text */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Description Text */
+.description {
+  font-size: 16px;
+}
+
+/* Prevent overflow on small screens */
+@media (max-width: 768px) {
+  .swiper-slide {
+    width: 100% !important; /* Ensure slides take full width on small screens */
+  }
+}
+
+/* Responsive Settings */
+@media (min-width: 1024px) {
+  .swiper-slide {
+    width: 25%; /* 4 boxes on large screens */
+  }
+}
+
+
+  /* swiper */
+
+
+
+
+
+ /* heading color */
+ .heading h1 {
+            /* font-family: Helvetica, sans-serif, Arial; */
+            color:#1c3461;
+            text-decoration: none;
+        }
+
+   /* heading color */
+
+
+
+
+   
+  /* our work progress */
+  .service-div  {
+            border:1px solid #000;
+            height: 100%;
+            padding: 10px;
+            border-radius: 25px;
+            background-color: #fff;
+            margin: 10px;
+        }
+        .key-div    {
+            height: 100%;
+            padding: 16px;
+            margin: 10px;
+            background-color:#2a3855;
+        }
+
+        .key-div h5 {
+            color:#fff;
+            font-size: 1.5rem;
+        }
+        .key-div p {
+            /* font-family: Arial, Helvetica, sans-serif; */
+            color:#fff;
+            font-weight: lighter;
+
+        }
+  /* our work progress */
+
+
+
+
+
+
+  
+
+/* we use this platform */
+.swiper {
+            width: 100%;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: #fff; 
+            padding: 20px;
+            width: 25%;
+        }
+
+        .swiper-slide img {
+            max-width: 100px; 
+            height: 100px;
+        }
+
+
+        .swiper-slide h2 {
+            color: #1c3461;
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .swiper-slide h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1c3461;
+            font-size: 1.10rem;
+            margin: 0.5rem 0 0;
+        }
+
+
+        .swiper-wrapper {
+            display: flex;
+        }
+
+        .swiper-slide {
+            flex: 0 0 auto; 
+        }
+
+
+        @media (max-width: 768px) {
+            .swiper-slide h2 {
+                font-size: 1.75rem;
+            }
+            
+            .swiper-slide h5 {
+                font-size: 1rem;
+            }
+
+            .swiper-slide img {
+                max-width: 70px;
+            }
+        }
+
+/* we use this platform */
+
 
 
 
@@ -436,7 +601,7 @@
 <!-- top nbanner -->
  
 <section class="custom-section">
-<div class="container text-center" >
+<div class=" heading container text-center" >
     <h1>Our Campaigns Attract and Convert</h1>
     <p>Expert PPC management services for real results.
 
@@ -454,12 +619,259 @@
 
 
 
+<!-- swiper -->
+<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <!-- Slider Box 1 -->
+    <div class="swiper-slide">
+      <div class="box">
+        <h1 class="caption">1200+</h1>
+        <p class="description">Projects Completed</p>
+      </div>
+    </div>
+
+    <!-- Slider Box 2 -->
+    <div class="swiper-slide">
+      <div class="box">
+        <h1 class="caption">500+</h1>
+        <p class="description">Global Clients</p>
+      </div>
+    </div>
+
+    <!-- Add more boxes as needed -->
+    <div class="swiper-slide">
+      <div class="box">
+        <h1 class="caption">99%</h1>
+        <p class="description">Customer Satisfaction</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="box">
+        <h1 class="caption">12+</h1>
+        <p class="description">Successfully Years</p>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="box">
+        <h1 class="caption">400+</h1>
+        <p class="description">Developers Strong</p>
+      </div>
+    </div>
+   
+
+  </div>
+</div>
+
+
+<!-- swiper -->
+
+
+
+<!-- blue background section -->
+<section class="text-center" style="background-color: #007ec6;">
+  <div class="container">
+      <div class="heading row justify-content-center text-center">
+          <div class="col-10 col-md-10">
+              <h3 class="fs-1 fs-lg-3 fw-bold" style="color:#fff;">Comprehensive PPC Management Services</h3>
+              <p style="color:white">Our clients hire us to continually optimize their PPC campaigns while they conduct their business.</p>
+              <div class="small-line"></div>  
+          </div>
+      </div>
+      
+      <div class="row mt-2 mt-md-5 justify-content-center" style="font-family: Arial, Helvetica, sans-serif; color:#2a3855; font-weight: normal;">
+          <div class=" col-md-4 new-div text-center col-lg-4 mt-4">
+              <div class="sliding service-div">
+                  <div class="ring-icon mx-auto">
+                      <img src="./img/icons/web-design.png" style="height:50px;width:50px;">
+                  </div>
+                  <h5 class="mt-4 fw-bold">Discovery</h5>
+                  <p class="mb-0 mt-3 px-3">
+                    We connect with each client to learn about their expectations and their history with pay-per-click campaigns.
+                  </p>
+              </div>
+          </div>
+          <div class=" col-md-4 new-div text-center col-lg-4 mt-4">
+              <div class="sliding service-div">
+                  <div class="ring-icon mx-auto">
+                      <img src="./img/icons/app-development.png" style="height:50px;width:50px;">
+                  </div>
+                  <h5 class="mt-4 fw-bold">Strategy</h5>
+                  <p class="mb-0 mt-3 px-3">
+                    Our PPC team builds a strategy for the campaign with a focus on keywords, landing pages, and performance.
+                  </p>
+              </div>
+          </div>
+          <div class="sliding col-md-4 new-div col-lg-4 text-center mt-4">
+              <div class="sliding service-div">
+                  <div class="ring-icon mx-auto">
+                      <img src="./img/icons/icons8-paid-search-48.png" style="height:50px;width:50px;">
+                  </div>
+                  <h5 class="mt-4 fw-bold">Creative</h5>
+                  <p class="mb-0 mt-3 px-3">
+                    Banner and textual ads are created with each keyword and audience in mind, with custom landing pages.
+                  </p>
+              </div>
+          </div>
+          <div class="col-md-4 new-div col-lg-4 text-center mt-4">
+              <div class="sliding service-div">
+                  <div class="ring-icon mx-auto">
+                      <img src="./img/icons/digital-marketing.png" style="height:50px;width:50px;">
+                  </div>
+                  <h5 class="mt-4 fw-bold">Launch</h5>
+                  <p class="mb-0 mt-3 px-3">
+                    The pay-per-click campaign is implemented using a variety of tools to ensure an accurate launch on all fronts.
+                  </p>
+              </div>
+          </div>
+          <div class="col-md-4 new-div col-lg-4 text-center mt-4">
+              <div class="sliding service-div">
+                  <div class="ring-icon mx-auto">
+                      <img src="./img/icons/icons8-accounting-48.png" style="height:50px;width:50px;">
+                  </div>
+                  <h5 class="mt-4 fw-bold">Management</h5>
+                  <p class="mb-0 mt-3 px-3">
+                    Our team continues to monitor ad performance to make adjustments based on preset guidelines and optimization.
+                  </p>
+              </div>
+          </div>
+          <div class="col-md-4 new-div col-lg-4 text-center mt-4">
+              <div class="sliding service-div">
+                  <div class="ring-icon mx-auto">
+                      <img src="./img/icons/reputation.png" style="height:50px;width:50px;">
+                  </div>
+                  <h5 class="mt-4 fw-bold">Reporting</h5>
+                  <p class="mb-0 mt-3 px-3">
+                    We produce unique reports for each of our clients to show them the metrics and help them draw a meaningful conclusion.
+                  </p>
+              </div>
+          </div>
+      </div>
+      <br></br>
+      
+  </div>
+</section>
+<!-- blue background section -->
+
+
+
+
+<!-- we use this paltform -->
+<section class="bg-white" style="margin-top: 4em;">
+  <div class="container">
+      <div class="row justify-content-center text-center">
+          <div class="heading text-center mb-6">
+              <h1 class="fs-1 fs-lg-3 fw-bold">We Use This Platform</h1>
+           
+          </div>
+      </div>
+      <div class="swiper theme-slider">
+          <div class="swiper-wrapper">
+              <div class="swiper-slide  ">
+                  <div class="row px-lg-12 justify-content-center">
+                      <div class="col-md-12 text-center  ">
+                          <img class="rounded-3 mx-auto img-fluid" src="./img/icons/angular.png" alt="Member" />
+                          <br><br>
+                          <h5 class="text-center">ANGULAR JS</h5> 
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide  ">
+                  <div class="row px-lg-12 justify-content-center">
+                      <div class="col-md-12 text-center  ">
+                          <img class="rounded-3 mx-auto img-fluid" src="./img/icons/nodejs.jpg" alt="Member" />
+                          <br><br>
+                          <h5 class="text-center">NODE JS</h5> 
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="swiper-slide  ">
+                  <div class="row px-lg-12 justify-content-center">
+                      <div class="col-md-12 text-center  ">
+                          <img class="rounded-3 mx-auto img-fluid" src="./img/icons/laravel.png" alt="Member"/>
+                          <br><br>
+                          <h5 class="text-center">LARAVEL</h5> 
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide  ">
+                  <div class="row px-lg-12 justify-content-center">
+                      <div class="col-md-12 text-center  ">
+                          <img class="rounded-3 mx-auto img-fluid" src="./img/icons/php.png" alt="Member"/>
+                          <br><br>
+                          <h5 class="text-center">PHP</h5> 
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide  ">
+                  <div class="row px-lg-12 justify-content-center">
+                      <div class="col-md-12 text-center  ">
+                          <img class="rounded-3 mx-auto img-fluid" src="./img/icons/wordpress.png" alt="Member"/>
+                          <br><br>
+                          <h5 class="text-center">WORDPRESS</h5> 
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide  ">
+                  <div class="row px-lg-12 justify-content-center">
+                      <div class="col-md-12 text-center  ">
+                          <img class="rounded-3 mx-auto img-fluid" src="./img/icons/magento.png" alt="Member"/>
+                          <br><br>
+                          <h5 class="text-center"> MAGENTO </h5> 
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide  ">
+                  <div class="row px-lg-12 justify-content-center">
+                      <div class="col-md-12 text-center  ">
+                          <img class="rounded-3 mx-auto img-fluid" src="./img/icons/android.png" alt="Member"/>
+                          <br><br>
+                          <h5 class="text-center"> ANDROID </h5>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide  ">
+                  <div class="row px-lg-12 justify-content-center">
+                      <div class="col-md-12 text-center  ">
+                          <img class="rounded-3 mx-auto img-fluid" src="./img/icons/ios.png" alt="Member"/>
+                          <br><br>
+                          <h5 class="text-center"> IOS </h5> 
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide  ">
+                  <div class="row px-lg-12 justify-content-center">
+                      <div class="col-md-12 text-center  ">
+                          <img class="rounded-3 mx-auto img-fluid" src="./img/icons/flutter.png" alt="Member"/>
+                          <br><br>
+                          <h5 class="text-center"> FLUTTER </h5> 
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-slide  ">
+                  <div class="row px-lg-12 justify-content-center">
+                      <div class="col-md-12 text-center  ">
+                          <img class="rounded-3 mx-auto img-fluid" src="./img/icons/reactnative.png" alt="Member"/>
+                          <br><br>
+                          <h5 class="text-center"> REACT JS</h5> 
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>  
+  </div>
+</section>
+<!-- we use this paltform -->
+
+
 
   
    
  
 <section class="custom-section"></section>
-<div class="container text-center">
+<div class="heading container text-center">
   <h1>Partner with a Certified PPC Management Company</h1>
   <p class="card-description">As a reliable PPC management company, we can help you reap the following benefits:</p>
 <div class="small-line"></div>
@@ -495,7 +907,7 @@
           <div class="feature-box text-center">
             <img src="./img/new logo/data-analytics.webp" alt="Logo 2" class="feature-logo mb-3">
             <h3 class="feature-caption">Increased Quality Traffic</h3>
-            <p class="feature-description">Our exemplary and compelling targeted campaigns bring high-quality traffic to your website.</p>
+            <p class="feature-description">Our exemplary and compelling targeted campaigns <br><br><br>bring high-quality traffic to your website.</p>
           </div>
         </div>
   
@@ -504,7 +916,7 @@
           <div class="feature-box text-center">
             <img src="./img/new logo/target.webp" alt="Logo 3" class="feature-logo mb-3">
             <h3 class="feature-caption">Maximized ROI</h3>
-            <p class="feature-description">Our calculative strategies ensure to convert the leads into potential customers and enhance your Return on Investment (ROI).</p>
+            <p class="feature-description">Our calculative strategies ensure to convert the leads<br><br> into potential customers <br><br><br>and enhance your Return on Investment (ROI).</p>
           </div>
         </div>
   
@@ -513,7 +925,7 @@
           <div class="feature-box text-center">
             <img src="./img/new logo/world-globe.webp" alt="Logo 4" class="feature-logo mb-3">
             <h3 class="feature-caption">Reduced CPC</h3>
-            <p class="feature-description">Our efficient team has the skill to bid on the relevant keywords, reduce total Cost-per-Conversion (CPC) and strives to improve the quality score level.</p>
+            <p class="feature-description">Our efficient team has the skill to bid on the relevant keywords,<br><br> reduce total Cost-per-Conversion (CPC)<br> and strives to improve the quality score level.</p>
           </div>
         </div>
 
@@ -548,7 +960,7 @@
 
 <!-- our custom social media marketing service -->
 <section class="custom-section"></section>
-  <div class="container text-center">
+  <div class=" heading container text-center">
     <h1>Scale Your Business with Smart PPC Management Services India</h1>
     <p class="card-description">Adopting a smart strategy, we provide conversion-driven PPC management services in India and abroad to propel your brand up on the search results and social media feeds.
 
@@ -647,7 +1059,7 @@
  
 <!-- last faq section -->
 <section class="custom-section"></section>
-<div class="container text-center">
+<div class="heading container text-center">
   <h1>Clear Your Confusion before Engaging PPC Services India</h1>
   <p class="card-description">As the providers of PPC services in India and abroad, we are upfront about our work process. Before starting your journey with us, clear all your doubts.
   </p>
@@ -801,5 +1213,8 @@
   <!-- footer section -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+  <script src="index.js"></script>
 </body>
 </html>
