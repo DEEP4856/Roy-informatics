@@ -77,3 +77,67 @@ function slidePrev() {
 }
 
 // image slider effect
+
+
+
+// swiper slider caption box
+
+var swiper = new Swiper('.swiper-container', {
+  loop: true, // Infinite loop
+  spaceBetween: 20, // Space between slides
+  autoplay: {
+    delay: 3000, // Automatic slide after 3 seconds
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 4, // 4 boxes on large screens
+    },
+    768: {
+      slidesPerView: 1, // 1 box on small screens
+    },
+  },
+});
+
+// swiper slider caption box
+
+
+
+// swiper slider for we use this platform
+document.addEventListener('DOMContentLoaded', function () {
+  var statsSwiper = new Swiper('.theme-slider', {
+      slidesPerView: 1,
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+      delay: 3000, 
+      disableOnInteraction: false,
+      },
+      breakpoints: {
+      768: {
+          slidesPerView: 2,
+      },
+      1024: {
+          slidesPerView: 4,
+      }
+      }
+  });
+  
+  var platformsSwiper = new Swiper('.theme-slider', {
+      slidesPerView: 2,
+      spaceBetween: 0,
+      loop: true,
+      autoplay: {
+      delay: 3000, 
+      disableOnInteraction: false,
+      },
+      breakpoints: {
+      768: {
+          slidesPerView: 3,
+      },
+      1024: {
+          slidesPerView: 4,
+      }
+      }
+  });
+  });
+// swiper slider for we use this platform
